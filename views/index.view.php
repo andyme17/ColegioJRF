@@ -14,7 +14,37 @@
 
 <body>
   <?php require 'nav-bar.view.php'; ?>
+  
+  <section class="banner">
+    <div class="banner-content">
+      <p class="header-banner">COLEGIO JESÚS ROMERO FLORES</p>
+      <p class="sub-header-banner">Forjando triunfadores desde 1988</p>
+    </div>
+  </section>
 
+  <main class="sec-bienvenida container my-4">
+    <div class="content-bienvenida">
+      <h2>Bienvenid@s</h2>
+      <hr>
+      <p>
+        El jardín de niños Villa Infantil María Isabel le da las más cordial bienvenida a sus pequeños.
+        Ponemos a su disposición los servicios para el adecuado desarrollo de sus hijos en diversas
+        áreas como la convivencia, idiomas y valores para que sus niños tengan un desarrollo sano y
+        obtengan las habilidades que les permitirán continuar con su proceso de maduración.</p>
+    </div>
+    <div class="img-bienvenida pt-3 pt-lg-0 ml-lg-5">
+      <img src="<?php echo PATH; ?>img/img-mascota.png" alt="Logotipo de la mascota de la escuela">
+    </div>
+  </main>
+
+  <section class="img-oferta mt-md-4">
+    <div class="container text-oferta">
+      <h4>Conoce nuestra oferta educativa así como los diferentes servicios con los que contamos</h4>
+      <a href="<?php echo PATH; ?>servicios.php" class="btn btn-outline-light mt-4">Ver más ></a>
+    </div>
+  </section>
+
+    
   
   <?php require 'footer.view.php'; ?>
 
