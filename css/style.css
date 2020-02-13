@@ -54,7 +54,7 @@ h5 {
 }
 
 hr {
-  background-color: #28cbe4;
+  background-color: #f8b624;;
   border-top: 0;
   height: 0.1875rem;
   margin-top: 0.5rem;
@@ -138,7 +138,8 @@ ol {
 
 /*Navegation menu*/
 header {
-  background: linear-gradient(#f8b524, #fcc224);
+  /* background: #0b2452; */
+  background: #03224e;
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -445,6 +446,48 @@ header {
     text-align: center;
   }
 }
+
+/*Educative offer section*/
+.img-oferta {
+  background-image: url("../img/img-instalacion3.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 15.625rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.img-oferta:before {
+  content: "";
+  width: 100%;
+  height: 15.625rem;
+  position: absolute;
+  background: linear-gradient(90deg, #03224e 0%, rgb(19, 77, 156) 35%, rgb(9, 98, 115) 100%);
+  opacity: 0.75;
+}
+
+.text-oferta {
+  z-index: 1;
+}
+
+.text-oferta h4 {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .text-oferta {
+    width: 60%;
+  }
+}
+
 
 /**********footer***********/
 
