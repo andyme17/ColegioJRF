@@ -54,7 +54,7 @@ h5 {
 }
 
 hr {
-  background-color: #f8b624;;
+  background-color: #f8b624;
   border-top: 0;
   height: 0.1875rem;
   margin-top: 0.5rem;
@@ -120,8 +120,8 @@ ol {
 
 .btn-outline-light:hover {
   color: #03224e !important;
-  box-shadow: 20rem 0 #59d0e3 inset, -20rem 0 #59d0e3 inset !important;
-  border-color: #59d0e3 !important;
+  box-shadow: 20rem 0 #f8b624 inset, -20rem 0 #f8b624 inset !important;
+  border-color: #f8b624 !important;
 }
 
 @media (min-width: 500px) {
@@ -138,7 +138,6 @@ ol {
 
 /*Navegation menu*/
 header {
-  /* background: #0b2452; */
   background: #03224e;
   width: 100%;
   position: fixed;
@@ -165,8 +164,14 @@ header {
   font-size: 2.5rem;
 }
 
-.menu .container-menu .logo .btn-menu i:hover{
-    color: #23166f;
+.menu .container-menu .logo .btn-menu{
+  display: none;
+  text-decoration: none;
+  color: #fff;  
+}
+
+.menu .container-menu .logo .btn-menu:hover{
+  color: #f8b624;
 }
 
 .menu .menu-link {
@@ -178,10 +183,12 @@ header {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  color: #03224e;
+  color: #fff;
   font-weight: 500;
   font-size: 1.125rem;
   vertical-align: middle;  
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
 }
 
 .menu .menu-link a.opc {
@@ -212,8 +219,8 @@ header {
 } 
 
 .menu .menu-link a:hover {
-  background: linear-gradient( 0deg, #23166f 0%, rgb(6, 100, 166) 100% );
-  color: #fff;
+  background: linear-gradient(0deg, rgba(248,181,36,1) 0%, rgba(254,200,54,1) 100%);
+  color: #03224e;
   padding: 31.5px 0;
 }
 
@@ -246,6 +253,10 @@ header {
     display: block;
   }
 
+  .menu .container-menu .logo .btn-menu:hover{
+    color: #f8b624;
+  }
+
   .menu .container-menu {
     width: 100%;
   }
@@ -270,25 +281,114 @@ header {
 
   .menu .menu-link {
     position: absolute;
-    background: rgba(251, 206, 84, 0.95);
+    background: rgba(27, 63, 115, 0.95);
     height: 100vh;
     width: 100%;
     top: 4.7rem;
     left: -100%;
     z-index: 50;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   .menu .menu-link a {
     padding: 0.9375rem;
     display: block;
     width: 100%;
-    border-bottom: 0.125rem solid rgba(252, 194, 36, 0.4);
+    border-bottom: 0.125rem solid #adb5bd26;
+  }
+
+  .menu .menu-link a:hover{
+    padding: 0.9375rem;
   }
 
   .menu .menu-link a.opc {
-    padding: 0.9375rem;
+    line-height: 1.5;
   }
+
+  .menu .menu-link a.opc:hover {
+    padding: 0.9375rem;
+  }  
+}
+
+
+/*Utilities*/
+.img-back {
+  background-image: url("../img/fondo.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.img-back:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+}
+
+.img-back h2 {
+  position: relative;
+}
+
+.img-back-blue {
+  background-image: url("../img/img1.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.img-back-blue:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: rgb(16, 116, 132);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+}
+
+.content-back-blue {
+  position: relative;
+  text-align: center;
+}
+
+.content-back-blue h2,
+.content-back-blue p {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .content-back-blue hr {
+    width: 50%;
+    margin: 0.1rem auto 1rem;
+  }
+}
+
+.text-back-blue span {
+  font-weight: 700;
+}
+
+.h-md-back-3 {
+  height: 300px;
+}
+
+.h-md-back-2 {
+  height: 250px;
 }
 
 /**********index page********/
@@ -297,7 +397,7 @@ header {
 .banner {
   position: relative;
   width: 100%;
-  height: calc(60vh - 5.6875rem);
+  height: calc(65vh - 5.6875rem);
   background-position: center center;
   background-size: cover;
   -webkit-transition: all 0.1s ease-in-out;
@@ -313,12 +413,11 @@ header {
 }
 
 .banner-content {
-  background:rgba(3, 34, 78, 0.65);
+  background: rgba(186, 197, 223, 0.65);
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -336,6 +435,7 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #03224e;
 }
 
 .header-banner {
@@ -344,6 +444,7 @@ header {
   font-weight: 900;
   padding-bottom: 0.9375rem;
   text-align: center;
+  width: 95%;
 }
 
 @media (min-width: 1024px) {
@@ -357,6 +458,7 @@ header {
   font-size: 1.25rem;
   padding: 0 1.25rem;
   text-align: center;
+  font-weight: 500
 }
 
 @media (min-width: 768px) {
@@ -452,42 +554,131 @@ header {
   background-image: url("../img/img-instalacion3.jpg");
   background-position: center center;
   background-size: cover;
-  height: 15.625rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
+  position: relative;
+  height: 230px;
 }
 
 .img-oferta:before {
   content: "";
   width: 100%;
-  height: 15.625rem;
   position: absolute;
-  background: linear-gradient(90deg, #03224e 0%, rgb(19, 77, 156) 35%, rgb(9, 98, 115) 100%);
+  background: linear-gradient(90deg, rgb(3, 34, 78) 0%, rgb(3, 118, 136) 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   opacity: 0.75;
 }
 
 .text-oferta {
-  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-.text-oferta h4 {
+.text-oferta h4,.text-oferta a{
+  flex: 0 0 100%;
+}
+
+.text-oferta h4{
   color: #fff;
 }
 
 @media (min-width: 768px) {
+  .img-oferta{
+    height: 140px;
+  }
+
   .text-oferta {
-    width: 60%;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+  }
+
+  .text-oferta h4{
+    flex-basis: 60%;    
+  }
+  
+  .text-oferta a{
+    flex-basis: calc(40% - 2.5rem); 
   }
 }
 
+@media(min-width: 1024px) {
+  .img-oferta{
+    height: 110px;
+  }
+}
+
+/*Link section*/
+.text-kinder p {
+  font-family: "Roboto", sans-serif !important;
+  text-align: center;
+  color: #03224e;
+  font-weight: 500;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .text-kinder p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+}
+
+.text-kinder p span {
+  color: #c80b63;
+  font-weight: 600;
+}
+
+.btn-sec-1 {
+  display: none;
+}
+
+.btn-sec-2 {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .text-kinder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    padding-right: 2.5rem;
+  }
+
+  .img-back .btn-sec-1 {
+    display: inline-block;
+  }
+
+  .img-back .btn-sec-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-kinder p {
+    font-size: 22px;
+    text-align: left;
+    line-height: 2;
+  }
+}
 
 /**********footer***********/
 
@@ -507,7 +698,7 @@ header {
 }
 
 footer hr {
-  background-color: #134e9c;
+  background-color: #03224e;
 }
 
 @media (min-width: 768px) {
