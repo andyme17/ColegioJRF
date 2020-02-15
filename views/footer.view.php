@@ -15,7 +15,7 @@
                     <li><a href="<?php echo PATH;?>servicios.php">Nuestros Servicios</a></li>
                     <li><a href="<?php echo PATH;?>inscripciones.php">Inscripciones</a></li>
                     <li><a href="<?php echo PATH;?>instalaciones.php">Instalaciones</a></li>
-                    <li><a href="#">Nivel Primaria </a></li>
+                    <li><a href="#">Nivel Preescolar </a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-4">

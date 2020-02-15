@@ -15,7 +15,17 @@
 <body>
   <?php require 'nav-bar.view.php'; ?>
 
-  
+  <section class="img-back-header h-md-back-3 py-4">
+        <div class="content-back-header container mx-auto">
+            <h2>¿Quiénes Somos?</h2>
+            <hr>
+            <p class="text-back-header">
+                Villa Infantil María Isabel somos un equipo de profesionales especializados en educación infantil,
+                que tiene como <span>MISIÓN</span> lograr que los niños de edad preescolar desarrollen sus capacidades de forma
+                integral, a fin de alcanzar un nivel óptimo de convivencia con su entorno y en su vida futura.
+            </p>
+        </div>
+  </section>
   <?php require 'footer.view.php'; ?>
 
   <!--Archivos javascript para bootstrap -->

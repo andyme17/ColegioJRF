@@ -61,6 +61,8 @@
     </div>
   </section>
 
+  
+
   <?php require 'footer.view.php'; ?>
 
   <!--Archivos javascript para bootstrap -->
