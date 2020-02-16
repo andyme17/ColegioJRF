@@ -310,7 +310,6 @@ header {
   }  
 }
 
-
 /*Utilities*/
 .img-back {
   background-image: url("../img/fondo.png");
@@ -336,7 +335,7 @@ header {
 }
 
 .img-back-header{
-  background-image: url("../img/img-back.jpg");
+  background-image: url("../img/img-instalacion1.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -682,19 +681,52 @@ header {
   }
 }
 
+/*Contact section*/
+.sec-contacto {
+  /* background: rgb(242,218,24);
+background: linear-gradient(90deg, rgba(242,218,24,1) 0%, rgba(217,143,31,1) 100%, rgba(12,57,74,1) 100%); */
+background: #052552;
+background: -webkit-linear-gradient(180deg, #0a457b, #000428);  
+background: linear-gradient(180deg, #0a457b,#000428);
+  text-align: center;
+}
+
+.sec-contacto p {
+  font-family: "Roboto", sans-serif !important;
+  color: #fff;
+  text-align: center;
+}
+
+.sec-contacto .header-contacto p {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .sec-contacto .header-contacto p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sec-contacto .header-contacto p {
+    font-size: 1.5rem;
+  }
+}
+
 /**********footer***********/
 
 /*first section*/
 .sec-footer {
   font-family: "Roboto", sans-serif;
-  background: #052552;
+ /*  background: #052552; */
+  background: #aebcce5c;
 }
 
-.sec-footer h5,
 .sec-footer ul li a,
 .sec-footer p,
 .sec-footer i{
-  color: #fff;
+  color: #03224e;
 }
 
 .img-footer {
@@ -741,11 +773,11 @@ footer a{
 }
 
 footer .sec-footer ul li a:hover {
-  color: #f8b624;
+  color: #c48908;
 }
 
 footer .sec-footer .redes a i:hover {
-  color: #f8b624;
+  color: #c48908;
 } 
 
 .icon {
@@ -758,7 +790,7 @@ footer .sec-footer .redes a i:hover {
 
 /*second section*/
 .sec-copyright {
-  background-color: #041226;
+  background-color: #000213;
   text-align: center;
 }
 
@@ -795,7 +827,7 @@ footer .sec-footer .redes a i:hover {
 
 /********Contact page**************/
 .sec-contact {
-  background-image: url("../img/img-back.jpg");
+  background-image: url("../img/img-instalacion1.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1026,14 +1058,15 @@ textarea:focus ~ .barra:before {
 
 .input-error {
   color: #dc3545;
+  font-weight: 600;
 }
 
 .alert-successful {
   padding: 1rem;
   margin-bottom: 20px;
   font-size: 14px;
-  border: 1px solid #4caf4fa2;
-  background-color: #4caf50;
+  border: 1px solid #28a745;;
+  background-color: #209b3d;
 }
 
 .form-contact p{
@@ -1096,4 +1129,19 @@ button.btn {
   .header-horario {
     width: 50%;
   }
+}
+
+/*Page gallery*/
+.sec-gallery .pgwSlideshow {
+  position: relative;
+}
+
+.pgwSlideshow {
+  background: #e6e6e64a !important;
+}
+
+.pgwSlideshow .ps-list {
+  border-top: 0 !important;
+  box-shadow: 0 10px 10px -5px #b3b2b2 inset !important;
+  background: #ccc9c9 !important;
 }
