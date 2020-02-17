@@ -30,23 +30,26 @@
   <section class="sec-mi-vi text-center">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 sec-mision py-4">
+        <div class="col-12 col-md-6 sec-mision p-4">
           <div class="sec-mi-vi-header pb-3">
             <h3>Misión</h3>
             <hr>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-            praesentium non libero recusandae sed id expedita, ut asperiores aliquid?
-            Nesciunt voluptas error quaerat ea veniam nisi modi, dolorum facilis nostrum?</p>
+          <p class="text-justify">
+            Somos un colegio que forma personas comprometidas con la comunidad desde preescolar hasta primaria, 
+            buscando la formación integral de los niños con valores como el respeto, la puntualidad, hábitos de
+            estudio y el amor a la patria, así se generara una sociedad más justa, preparada y exitosa para el futuro.
+          </p>
         </div>
-        <div class="col-12 col-md-6 py-4">
+        <div class="col-12 col-md-6 p-4">
           <div class="sec-mi-vi-header pb-3">
             <h3>Visión</h3>
             <hr>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-            praesentium non libero recusandae sed id expedita, ut asperiores aliquid?
-            Nesciunt voluptas error quaerat ea veniam nisi modi, dolorum facilis nostrum?</p>
+          <p class="text-justify">
+            En el colegio Jesús Romero trabajamos para continuar siendo la mejor opción educativa para las familias
+            de Santa Fe ofreciendo una formación con valores trascendentes en un ambiente sano con excelentes
+            instalaciones, tecnologías de vanguardia y los mejores maestros para ser un orgullo de nuestra comunidad.</p>
         </div>
       </div>
     </div>
@@ -60,9 +63,8 @@
       </div>
       <div class="text-nosotros">
         <p>
-          El Jardín de Niños Villa Infantil María Isabel se encuentra en un continuo
-          proceso de mejora, tanto en sus instalaciones como en sus planes de estudio
-          y mecánicas de trabajo, esto también incluye a padres de familia.
+          El colegio Jesús romero Flores se encuentra en un continuo proceso de mejora, tanto en sus instalaciones
+          como en sus planes de estudio y mecánicas de trabajo, esto incluye por supuesto a ustedes padres de familia.
         </p>
       </div>
     </div>
@@ -70,22 +72,22 @@
       <h3 class="text-center">Personal Administrativo</h3>
       <div class="row text-center pt-2">
         <div class="col-12 col-md-4 pb-4 pb-md-0">
-          <img src="<?php echo PATH; ?>img\imgp-direc-tec.jpg" alt="Fotografía de personal administrativo">
+          <img src="<?php echo PATH; ?>img\imgp-direc-grnl.jpg" alt="Fotografía de personal administrativo">
           <h5>Lic. María Isabel Rincón</h5>
           <hr>
           <p> Directora General</p>
         </div>
         <div class="col-12 col-md-4 pb-4 pb-md-0">
           <img src="<?php echo PATH; ?>img\imgp-direc-tec.jpg" alt="Fotografía de personal administrativo">
-          <h5>Dr. Eduardo Rincón Aguilar</h5>
+          <h5>Lic. Patricia Lerma</h5>
           <hr>
-          <p> Director Administrativo</p>
+          <p>Directora Técnica</p>
         </div>
         <div class="col-12 col-md-4">
-          <img src="<?php echo PATH; ?>img\imgp-direc.jpg" alt="Fotografía de personal administrativo">
-          <h5>Lic. Perla Susana Beltrán</h5>
+          <img src="<?php echo PATH; ?>img\imgp-coordinador.jpg" alt="Fotografía de personal administrativo">
+          <h5>Dr. Eduardo Rincón</h5>
           <hr>
-          <p> Directora Técnica</p>
+          <p>Coordinador General</p>
         </div>
       </div>
     </div>
