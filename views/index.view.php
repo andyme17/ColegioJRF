@@ -45,20 +45,21 @@
     </div>
   </section>
 
-  <section class="sec-kinder">
-    <div class="text-kinder py-3">
-      <div class="container">
-      <p>
-        Anexo al Colegio Jesús Romero Flores contamos con el <span>Jardín de Niños María Isabel</span>
-        que ofrece una educación de calidad a los pequeños de <span>nivel preescolar.</span>
-       </p>
-       <a href="#" class="btn btn-primary mt-3 btn-sec-1">Visítanos > </a>
-      </div>      
+  <section class="img-back py-3 py-lg-4">
+    <div class="row container mx-auto">
+      <div class="col-12 col-md-5 col-lg-6 text-primaria">
+        <p class="pb-2">
+          Anexo al Colegio Jesús Romero Flores contamos con el <span>Jardín de Niños María Isabel</span>
+          que ofrece una educación de calidad a los pequeños de <span>nivel preescolar.</span>
+        </p>
+        <a href="#" class="btn btn-primary mt-3 btn-sec-1">Visítanos > </a>
+      </div>
+      <div class="col-12 col-md-7 col-lg-6 img-primaria">
+        <img src="<?php echo PATH; ?>img/img-kinder.jpg" class="img-fluid" alt="Fotografía de la primaria">
+        <a href="#" class="btn btn-primary mt-2 btn-sec-2">Visítanos > </a>
+      </div>
     </div>
-    <div class="img-kinder">
-      <img src="<?php echo PATH; ?>img/img-kinder.jpg" class="img-fluid" alt="Fotografía del kinder">
-    </div>
-  </section> 
+  </section>
 
   <?php require 'footer.view.php'; ?>
 

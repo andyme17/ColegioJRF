@@ -611,77 +611,22 @@ header {
 }
 
 /*Link section*/
-
-.sec-kinder {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.text-kinder,.img-kinder{
-  flex: 0 0 100%;
-}
-
-.img-kinder{
-  order: -1;
-}
-
-.text-kinder{
-  background-image: url("../img/fondo.png");
-  background-position: center center;
-  background-size: cover;
-  position: relative; 
-}
-
-.text-kinder p,.text-kinder a{
-  position: relative;
-}
-
-.text-kinder p{
-  text-align: center;
-  color: #fff;
-}
-
-.text-kinder:before{
-  content: "";
-  width: 100%;
-  position: absolute;
-  background: #03224e ;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.75;
-}
-
-/* 
-.sec-kinder:before {
-  content: "";
-  width: 50%;
-  position: absolute;
-  background: #03224e ;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.75;
-} 
-
-.text-kinder p {
+.text-primaria p {
   font-family: "Roboto", sans-serif !important;
   text-align: center;
-  color: #fff;
+  color: #03224e;
   font-weight: 500;
   line-height: 2;
 }
 
 @media (min-width: 768px) {
-  .text-kinder p {
+  .text-primaria p {
     text-align: justify;
     line-height: 1.5;
   }
 }
 
-.text-kinder p span {
+.text-primaria p span {
   color: #c80b63;
   font-weight: 600;
 }
@@ -695,7 +640,7 @@ header {
 }
 
 @media (min-width: 768px) {
-  .text-kinder {
+  .text-primaria {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -726,12 +671,12 @@ header {
 }
 
 @media (min-width: 1024px) {
-  .text-kinder p {
-    font-size: 22px;
+  .text-primaria p {
+    font-size: 1.375rem;
     text-align: left;
     line-height: 2;
   }
-} */
+}
 
 /*Contact section*/
 .sec-contacto {
