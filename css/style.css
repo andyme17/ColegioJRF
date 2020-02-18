@@ -552,27 +552,13 @@ header {
 }
 
 /*Educative offer section*/
-.img-oferta {
-  background-image: url("../img/img-instalacion3.jpg");
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-  height: 230px;
+.img-oferta{
+  background: rgb(10,98,172);
+  background: linear-gradient(180deg, #0a62ac, #03224e);
+  
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.img-oferta:before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  background: linear-gradient(90deg, rgb(3, 34, 78) 0%, rgb(3, 118, 136) 100%);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.75;
 }
 
 .text-oferta {
@@ -593,10 +579,6 @@ header {
 }
 
 @media (min-width: 768px) {
-  .img-oferta {
-    height: 170px;
-  }
-
   .text-oferta {
     justify-content: space-between;
     text-align: left;
@@ -611,18 +593,83 @@ header {
     flex-basis: calc(40% - 2.5rem);
   }
 }
-
+ 
 @media (min-width: 1024px) {
-  .img-oferta {
-    height: 150px;
+  .text-oferta h4 {
+    flex-basis: 70%;
+  }
+
+  .text-oferta a {
+    flex-basis: calc(30% - 2.5rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-oferta a {
+    flex-basis: calc(30% - 5.5rem);
   }
 }
 
 /*Link section*/
+
+.sec-kinder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-kinder,.img-kinder{
+  flex: 0 0 100%;
+}
+
+.img-kinder{
+  order: -1;
+}
+
+.text-kinder{
+  background-image: url("../img/fondo.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative; 
+}
+
+.text-kinder p,.text-kinder a{
+  position: relative;
+}
+
+.text-kinder p{
+  text-align: center;
+  color: #fff;
+}
+
+.text-kinder:before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: #03224e ;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.75;
+}
+
+/* 
+.sec-kinder:before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  background: #03224e ;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.75;
+} 
+
 .text-kinder p {
   font-family: "Roboto", sans-serif !important;
   text-align: center;
-  color: #03224e;
+  color: #fff;
   font-weight: 500;
   line-height: 2;
 }
@@ -684,7 +731,7 @@ header {
     text-align: left;
     line-height: 2;
   }
-}
+} */
 
 /*Contact section*/
 .sec-contacto {
