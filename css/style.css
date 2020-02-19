@@ -610,71 +610,90 @@ header {
   }
 }
 
-/*Link section*/
-.text-primaria p {
+/*Link section */
+
+.sec-kinder{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-kinder,
+.img-kinder{
+  flex: 0 0 100%;
+}
+
+.img-kinder{
+  order: -1;
+}
+
+.text-kinder p {
   font-family: "Roboto", sans-serif !important;
-  text-align: center;
-  color: #03224e;
   font-weight: 500;
   line-height: 2;
 }
 
-@media (min-width: 768px) {
-  .text-primaria p {
-    text-align: justify;
-    line-height: 1.5;
-  }
-}
-
-.text-primaria p span {
+.text-kinder p span {
   color: #c80b63;
   font-weight: 600;
 }
 
-.btn-sec-1 {
-  display: none;
+.text-kinder{
+  text-align: center; 
 }
 
-.btn-sec-2 {
-  display: block;
-}
+@media(min-width: 768px) {
+  .sec-kinder{
+    justify-content: space-between;
+  }
 
-@media (min-width: 768px) {
-  .text-primaria {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+  .img-kinder{
+    flex-basis: 60%;
+  }
+
+  .text-kinder{
+    padding: 0 15px;
+    flex-basis: 40%;
+    order: -1;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    padding-right: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    text-align: right;
   }
 
-  .img-back .btn-sec-1 {
-    display: inline-block;
-  }
-
-  .img-back .btn-sec-2 {
-    display: none;
+  .text-kinder p{
+    text-align: left;
+    font-size: 1rem;   
   }
 }
 
-@media (min-width: 1024px) {
-  .text-primaria p {
-    font-size: 1.375rem;
-    text-align: left;
-    line-height: 2;
+@media(min-width: 992px) {
+  .text-kinder{
+    padding: 0 30px;    
+  }  
+
+  .text-kinder p{
+    font-size: 1.25rem;    
+  }
+
+  .img-kinder img{
+    height: 350px;
+    width: 1200px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .text-kinder{
+    padding: 0 40px;    
+  }  
+
+  .text-kinder p{
+    font-size: 22px;    
+  }
+
+  .img-kinder img{
+    height: 440px;
+    width: 1200px;
   }
 }
 
