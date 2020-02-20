@@ -626,19 +626,40 @@ header {
   order: -1;
 }
 
+.text-kinder p, .text-kinder a{
+  position: relative;
+}
+
 .text-kinder p {
   font-family: "Roboto", sans-serif !important;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 2;
+  color: #fff; 
 }
 
 .text-kinder p span {
-  color: #c80b63;
-  font-weight: 600;
+  color: #dda425;
+  font-weight: 700;
 }
 
 .text-kinder{
+  background: url("../img/fondo.png");
+  background-position: center center;
+  background-size: cover;
   text-align: center; 
+  position: relative;
+}
+
+.text-kinder:before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: #03224e;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
 }
 
 @media(min-width: 768px) {
@@ -663,7 +684,7 @@ header {
 
   .text-kinder p{
     text-align: left;
-    font-size: 1rem;   
+    font-size: 1rem;  
   }
 }
 
