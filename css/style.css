@@ -643,7 +643,7 @@ header {
 }
 
 .text-kinder{
-  background: url("../img/fondo.png");
+  background-image: url("../img/fondo.png");
   background-position: center center;
   background-size: cover;
   text-align: center; 
@@ -654,12 +654,12 @@ header {
   content: "";
   width: 100%;
   position: absolute;
-  background: #03224e;
+  background: #053266;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 @media(min-width: 768px) {
@@ -713,16 +713,64 @@ header {
   }
 
   .img-kinder img{
-    height: 440px;
+    height: 450px;
     width: 1200px;
   }
 }
 
 /*Contact section*/
-.sec-contacto {
+
+.sec-contacto{
+  background-image: url("../img/img-back.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.sec-contacto:before{
+  content: "";
+  width: 100%;
+  background-color: #e2e7ed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.content-contacto{
+  position: relative;
+  text-align: center;
+}
+
+.sec-contacto p {
+  font-family: "Roboto", sans-serif !important;
+  color: #03224e;
+  text-align: center;
+}
+
+.header-contacto p {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .header-contacto p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-contacto p {
+    font-size: 1.5rem;
+  }
+}
+
+/*.sec-contacto {
   /* background: rgb(242,218,24);
 background: linear-gradient(90deg, rgba(242,218,24,1) 0%, rgba(217,143,31,1) 100%, rgba(12,57,74,1) 100%); */
-  background: #052552;
+/*   background: #052552;
   background: -webkit-linear-gradient(180deg, #0a457b, #000428);
   background: linear-gradient(180deg, #0a457b, #000428);
   text-align: center;
@@ -749,7 +797,7 @@ background: linear-gradient(90deg, rgba(242,218,24,1) 0%, rgba(217,143,31,1) 100
   .sec-contacto .header-contacto p {
     font-size: 1.5rem;
   }
-}
+} */
 
 /**********footer***********/
 
