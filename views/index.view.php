@@ -38,7 +38,7 @@
     </div>
   </main>
 
-  <section class="img-oferta py-4 py-md-5">
+  <section class="sec-oferta py-4 py-md-5">
     <div class="container text-oferta">
       <h4>Conoce nuestra oferta educativa así como los diferentes servicios con los que contamos</h4>
       <a href="<?php echo PATH; ?>servicios.php" class="btn btn-outline-light mt-4 mt-md-0">Ver más ></a>
@@ -46,37 +46,37 @@
   </section>
 
   <section class="sec-kinder">
-    <div class="text-kinder">
+    <div class="img-back text-kinder">
       <div class="container py-4">
         <p class="pb-2">
           Anexo al Colegio Jesús Romero Flores contamos con el <span>Jardín de Niños María Isabel</span>
           que ofrece una educación de calidad a los pequeños de <span>nivel preescolar.</span>
         </p>
-        <a href="#" class="btn btn-outline-light mt-3 mt-xl-4">Visítanos > </a>
+        <a href="#" class="btn btn-primary mt-3 mt-xl-4">Visítanos > </a>
       </div>
     </div>
     <div class="img-kinder">
       <img src="<?php echo PATH; ?>img/img-kinder.jpg" class="img-fluid" alt="Fotografía de la primaria">
     </div>
   </section>
-
+  
   <section class="sec-contacto py-4">
     <div class="content-contacto container">
       <div class="row">
-        <div class="col-12 col-lg-10 offset-md-1">
+        <div class="col-12 offset-md-1 col-md-10">
           <div class="header-contacto">
             <p class="mb-3 mb-md-0">¿Quieres saber más acerca de nuestros servicios?</p>
             <p>¡Acércate a nosotros!</p>
-          </div>         
+          </div>
           <p class="mt-3">
             Para ofrecerte más informes, llena el siguiente formulario y
             un asesor educativo se pondrá en contacto contigo a la brevedad.
           </p>
-          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-primary mt-4">Contáctanos ></a>
+          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos ></a>
         </div>
       </div>
     </div>
-  </section>
+  </section> 
 
   <section class="img-back py-4">
     <div class="row container mx-auto">
@@ -112,12 +112,179 @@
     </div>
   </section>
 
+  <section class="sec-testimonios py-4 py-lg-5">
+    <div class="content-testimonios container">
+      <div class="text-testimonios pb-4">
+        <h2 class="">Testimonios</h2>
+        <h5 class="pt-3">
+          En la búsqueda de mejorar su experiencia con nosotros al final de cada ciclo
+          escolar se realiza una encuesta para manifestar sus comentarios, observaciones
+          y sugerencias.
+        </h5>
+      </div>
+      <div class="slider-testimonios">
+        <div class="">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-10 offset-1">
+                      <div class="card text-center">
+                        <!-- item testimonio -->
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h5 class="card-title">Rosa María Meza Iglesias</h5>
+                            <hr>
+                          </div>
+                          <blockquote class="card-text">
+                            “... está súper completo Villa Infantil pues
+                            es personalizado con personal capacitado, precio excelente y sobre
+                            todo calidad en educación. Recomendable para que los pequeños aprendan.”
+                          </blockquote>
+                          <div class="calificacion text-center">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                        </div>
+                      </div> <!-- close item testimonio -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-10 offset-1">
+                      <div class="card text-center">
+                        <!-- item testimonio -->
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h5 class="card-title">Angélica González Martínez</h5>
+                            <hr>
+                          </div>
+                          <blockquote class="card-text">
+                            “Recomiendo ampliamente el jardín de niños Villa Infantil, el
+                            trato tanto a los pequeños como a los papás es el mejor,
+                            las maestras son un amor, pacientes y comprometidas.”
+                          </blockquote>
+                          <div class="calificacion text-center">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                        </div>
+                      </div> <!-- close item testimonio -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-10 offset-1">
+                      <div class="card text-center">
+                        <!-- item testimonio -->
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h5 class="card-title">Rosa María Meza Iglesias</h5>
+                            <hr>
+                          </div>
+                          <blockquote class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Eligendi, praesentium. Provident perspiciatis fugit possimus,
+                            quod quam earum beatae.
+                          </blockquote>
+                          <div class="calificacion text-center">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                        </div>
+                      </div> <!-- close item testimonio -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec-opinion1 py-4">
+    <div class="container mx-auto">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mb-2"> De igual forma, puedes dejarnos tu opinión dando clic en el siguiente enlace. </p>
+          <h4 class="mb-4">!Recuerda, tu opinión es muy importante!</h4>
+          <button class="btn btn-outline-light" id="showFormOpinion">Dejar comentario o sugerencia ></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec-form-opinion img-back py-4">
+    <form action="" method="post" class="form-opinion container" novalidate>
+      <div class="container mx-auto">
+        <div class="group">
+          <input type="text" name="nombre" id="nombre" required="" autocomplete="off" value=""><span class="barra"></span>
+          <label for="">Nombre completo:</label>
+        </div>
+        <div class="group">
+          <input type="text" name="email" id="email" required="" autocomplete="off" value=""><span class="barra"></span>
+          <label for="">Correo electrónico:</label>
+        </div>
+        <div class="group">
+          <textarea name="" id="" rows="2" required></textarea><span class="barra"></span>
+          <label for="">Mensaje:</label>
+        </div>
+        <div class="text-md-right">
+          <button type="submit" class="btn btn-primary">Enviar comentario ></button>
+        </div>
+      </div>
+    </form>
+  </section>
+
   <section class="img-back">
     <h2 class="text-center pt-4">Últimos eventos</h2>
     <div class="sec-eventos container row py-3 mx-auto">
-      <div class="col-12 col-lg-4 pb-3">
-        <article class="card shadow-sm">
-          <img src="<?php echo PATH; ?>img/img-evento1.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
+      <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-4 pb-3">
+        <article class="card shadow">
+          <img src="<?php echo PATH; ?>img/evento-feb.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
+          <div class="card-body">          
+            <div class="card-title text-center">
+              <h5>Día del amor y la amistad</h5>
+              <hr>              
+            </div>            
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+              Some quick example text.
+            </p>
+            <p class="card-text text-right pt-3">
+              <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Febrero 2020</small>
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-4 pb-3">
+        <article class="card shadow">
+          <img src="<?php echo PATH; ?>img/evento-dic.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
           <div class="card-body">
             <div class="card-title text-center">
               <h5>Pastorela</h5>
@@ -128,12 +295,15 @@
               Some quick example text to build on the card title and make up the bulk of the card's content.
               Some quick example text.
             </p>
+            <p class="card-text text-right pt-3">
+              <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Diciembre 2020</small>
+            </p>
           </div>
         </article>
       </div>
-      <div class="col-12 col-lg-4 pb-3">
-        <article class="card shadow-sm">
-          <img src="<?php echo PATH; ?>img/img-evento1.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
+      <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-4 pb-3">
+        <article class="card shadow">
+          <img src="<?php echo PATH; ?>img/evento-nov.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
           <div class="card-body">
             <div class="card-title text-center">
               <h5>Día de muertos</h5>
@@ -144,20 +314,8 @@
               al que todos los niños asistieron con un disfraz inspirado en ese famoso personaje creado
               por José Guadalupe Posada.
             </p>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-lg-4">
-        <article class="card shadow-sm">
-          <img src="<?php echo PATH; ?>img/img-evento1.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
-          <div class="card-body">
-            <div class="card-title text-center">
-              <h5>Feria del libro</h5>
-              <hr>
-            </div>
-            <p class="card-text">
-              Fomentando el gusto por la lectura nuestros pequeños y sus papás participaron en la feria del libro
-              donde escucharon cuentos y pudieron adquirir un libro con sus propios ahorros.
+            <p class="card-text text-right pt-3">
+              <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Noviembre 2020</small>
             </p>
           </div>
         </article>
