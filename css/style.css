@@ -141,7 +141,7 @@ header {
   background: #03224e;
   width: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: 18;
   top: 0;
 }
 
@@ -552,10 +552,9 @@ header {
 }
 
 /*Educative offer section*/
-.img-oferta{
+.sec-oferta{
   background: rgb(10,98,172);
-  background: linear-gradient(180deg, #0a62ac, #03224e);
-  
+  background: linear-gradient(180deg, #0a62ac, #03224e);  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -634,14 +633,14 @@ header {
   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
   line-height: 2;
-  color: #fff; 
+  color: #03224e; 
 }
 
 .text-kinder p span {
   color: #dda425;
   font-weight: 700;
 }
-
+/* 
 .text-kinder{
   background-image: url("../img/fondo.png");
   background-position: center center;
@@ -660,7 +659,7 @@ header {
   left: 0;
   right: 0;
   opacity: 0.85;
-}
+} */
 
 @media(min-width: 768px) {
   .sec-kinder{
@@ -730,7 +729,8 @@ header {
 .sec-contacto:before{
   content: "";
   width: 100%;
-  background-color: #e2e7ed;
+  background: rgb(10,98,172);
+  background: linear-gradient(90deg, #075ba2, #03224e);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -746,7 +746,7 @@ header {
 
 .sec-contacto p {
   font-family: "Roboto", sans-serif !important;
-  color: #03224e;
+  color: #fff;
   text-align: center;
 }
 
@@ -767,37 +767,121 @@ header {
   }
 }
 
-/*.sec-contacto {
-  /* background: rgb(242,218,24);
-background: linear-gradient(90deg, rgba(242,218,24,1) 0%, rgba(217,143,31,1) 100%, rgba(12,57,74,1) 100%); */
-/*   background: #052552;
-  background: -webkit-linear-gradient(180deg, #0a457b, #000428);
-  background: linear-gradient(180deg, #0a457b, #000428);
+/*Testimonials section*/
+.sec-testimonios {
+  background-image: url("../img/img-testimonios.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.sec-testimonios:before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: rgb(10,98,172);
+  background: linear-gradient(180deg, #0a62ac, #03224e);  
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.content-testimonios{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-testimonios,
+.slider-testimonios{
+  flex: 0 0 100%;
+}
+
+.text-testimonios{
   text-align: center;
 }
 
-.sec-contacto p {
-  font-family: "Roboto", sans-serif !important;
+@media(min-width: 768px) {
+  .text-testimonios{
+    text-align: left;    
+  }
+}
+
+.sec-testimonios h2,
+.sec-testimonios h5,
+.sec-testimonios p,
+.sec-testimonios h4 {
+  position: relative;
+  color: #ffffff;
+}
+
+.calificacion {
+  color: #ffab00;
+}
+
+@media(min-width: 768px) {
+  .content-testimonios{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text-testimonios{
+    flex-basis: 45%;
+  }
+
+  .slider-testimonios{
+    flex-basis: calc(55% - 2rem);
+  }
+} 
+
+/*comments section*/
+.sec-opinion1{
+  background: #aebcce5c;
+  color: #03224e;
+}
+
+.sec-opinion1 button.btn.btn-outline-light{
   color: #fff;
-  text-align: center;
+  border-color: #03224e;
+  background: #03224e;
 }
 
-.sec-contacto .header-contacto p {
-  font-weight: 600;
-  font-size: 1.125rem;
+@media(min-width: 768px) {
+  .sec-opinion1 button.btn{
+    width: 60%;
+  }       
 }
 
-@media (min-width: 768px) {
-  .sec-contacto .header-contacto p {
-    font-size: 1.25rem;
-  }
+@media(min-width: 992px) {
+  .sec-opinion1 button.btn{
+    width: 50%;
+  }       
 }
 
-@media (min-width: 1024px) {
-  .sec-contacto .header-contacto p {
-    font-size: 1.5rem;
-  }
-} */
+/*Last events section*/
+.card-title h5 {
+  color: #03224e;
+}
+
+.sec-eventos .card{
+  height: 555px;
+}
+
+.sec-eventos .card-text {
+  font-size: 1rem !important;
+  text-align: justify;
+}
+
+.far.fa-calendar-alt{
+  color: #f8b624;
+}
+
+.desc-evento{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 /**********footer***********/
 
@@ -1231,6 +1315,17 @@ button.btn {
   background: #ccc9c9 !important;
 }
 
+.sec-contacto1{
+  background: rgb(10,98,172);
+  background: linear-gradient(180deg, #0a62ac, #03224e);  
+}
+
+.sec-contacto1 p {
+  font-family: "Roboto", sans-serif !important;
+  color: #fff;
+  text-align: center;
+}
+
 /********Us pag************/
 
 .sec-mi-vi {
@@ -1370,9 +1465,26 @@ button.btn {
 }
 
 .sec-opinion {
-  background: linear-gradient(0deg, rgb(3, 34, 92) 0%, rgb(9, 62, 114) 100%);
+  background: rgb(10,98,172);
+  background: linear-gradient(180deg, #0a62ac, #03224e);  
   color: #fff;
   text-align: center;
+}
+
+.sec-opinion h4{
+  color: #fff;
+}
+
+@media(min-width: 768px) {
+  .sec-opinion button.btn{
+    width: 55%;
+  }       
+}
+
+@media(min-width: 992px) {
+  .sec-opinion button.btn{
+    width: 50%;
+  }       
 }
 
 /*Opinion form*/
