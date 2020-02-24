@@ -54,19 +54,23 @@
     </div>
   </main>
 
-  <section class="sec-contacto py-4">
-    <div class="container">
-      <div class="header-contacto mb-3">
-        <p class="mb-3 mb-md-0">¿Deseas visitarnos personalmente?</p>
-        <p>¡ No esperes más !</p>
+  <section class="sec-contacto1 py-4">
+    <div class="content-contacto container">
+      <div class="row">
+        <div class="col-12 offset-md-1 col-md-10">
+          <div class="header-contacto">
+            <p class="mb-3 mb-md-0">¿Quieres saber más acerca de nuestros servicios?</p>
+            <p>¡Acércate a nosotros!</p>
+          </div>
+          <p class="mt-3">
+            Para ofrecerte más informes, llena el siguiente formulario y
+            un asesor educativo se pondrá en contacto contigo a la brevedad.
+          </p>
+          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos ></a>
+        </div>
       </div>
-      <p>
-        Para ofrecerte más informes sobre el lugar y horario de visita
-        consulta el siguiente enlace, o bien dejanos un mensaje.
-      </p>
-      <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos ></a>
     </div>
-  </section>
+  </section> 
 
   <?php require 'footer.view.php'; ?>
 
