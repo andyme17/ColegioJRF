@@ -865,7 +865,7 @@ header {
 }
 
 .sec-eventos .card{
-  height: 555px;
+  height: 600px;
 }
 
 .sec-eventos .card-text {
@@ -875,12 +875,6 @@ header {
 
 .far.fa-calendar-alt{
   color: #f8b624;
-}
-
-.desc-evento{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 /**********footer***********/

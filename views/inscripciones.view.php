@@ -14,7 +14,17 @@
 
 <body>
   <?php require 'nav-bar.view.php'; ?>
-
+  
+  <section class="img-back-header h-md-back-2 py-4">
+    <div class="content-back-header container mx-auto">
+      <h2>Inscripciones</h2>
+      <hr>
+      <p class="text-back-header">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, et nam tenetur reiciendis minus nesciunt rem
+        amet impedit nulla qui, fugiat earum perferendis iusto vitae.(definir).
+      </p>
+    </div>
+  </section>
   
   <?php require 'footer.view.php'; ?>
 
