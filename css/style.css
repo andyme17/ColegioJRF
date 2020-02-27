@@ -136,6 +136,16 @@ ol {
   }
 }
 
+.modal-content{
+  background-color: transparent!important;
+  border: 0!important;
+}
+
+.close {
+  color:#fff!important;
+  opacity: .8!important;
+}
+
 /*Navegation menu*/
 header {
   background: #03224e;
@@ -394,6 +404,13 @@ header {
 }
 
 /**********index page********/
+
+/*Modal section*/
+@media(min-width: 1200px) {
+  .modal-content img{
+    height: 500px;
+  }   
+}
 
 /*Banner*/
 .banner {
