@@ -865,9 +865,9 @@ header {
   color: #03224e;
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1024px){
   .sec-eventos .card{
-    height: 550px;
+    height: 580px;
   }
 }
 

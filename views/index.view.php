@@ -286,9 +286,10 @@
               <hr>              
             </div>            
             <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-              Some quick example text.
+              Para conmemorar el día de la amistad, nuestros alumnos realizaron un intercambio
+              de playeritas y convivieron compartiendo su lunch con todos, como buenos amigos.
+              También se tomaron lindas fotos con un tierno fondo que sus maestras prepararon 
+              con mucho cariño para la ocasión.
             </p>
             <p class="card-text text-right pt-3">
               <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Febrero 2020</small>
@@ -301,13 +302,13 @@
           <img src="<?php echo PATH; ?>img/evento-dic.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
           <div class="card-body">
             <div class="card-title text-center">
-              <h5>Pastorela</h5>
+              <h5>Día de reyes</h5>
               <hr>
             </div>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-              Some quick example text.
+              Los Reyes Magos también visitaron nuestras instalaciones de Villa Infantil y 
+              nuestros pequeños recibieron un presente al regresar a clases después de las
+              fiestas decembrinas. ¡Estuvimos muy emocionados y felices!
             </p>
             <p class="card-text text-right pt-3">
               <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Diciembre 2020</small>
@@ -320,13 +321,13 @@
           <img src="<?php echo PATH; ?>img/evento-nov.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
           <div class="card-body">
             <div class="card-title text-center">
-              <h5>Día de muertos</h5>
+              <h5>Pastorela</h5>
               <hr>
             </div>
             <p class="card-text">
-              Con un emocionante concurso, elegimos al “Rey Catrín” y “Reina Catrina” de nuestro evento,
-              al que todos los niños asistieron con un disfraz inspirado en ese famoso personaje creado
-              por José Guadalupe Posada.
+              Nuestros alumnos presentaron la divertida pastorela “entre pastores y diabluras” 
+              en el teatro de la Unidad Santa Fe, donde hicieron gala de su talento y gracia para bailar,
+              entreteniendo a familiares y amigos de la comunidad Villa Infantil y Jesús Romero Flores.
             </p>
             <p class="card-text text-right pt-3">
               <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Noviembre 2020</small>
