@@ -169,7 +169,7 @@
             <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   </section>
 
@@ -187,7 +187,7 @@
         <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-0 col-xl-7 order-2 ">
           <img class="img-fluid pt-3 pt-lg-0" src="<?php echo PATH; ?>img/imgs-comida.jpg" alt="Foto del servicio de comida del preescolar">
         </div>
-        <div class="col-12 col-lg-5 order-lg-2 py-xl-4">
+        <div class="col-12 col-lg-5 order-lg-2 py-xl-4 text-service">
           <h3>Comedor</h3>
           <p>
             El colegio JRF ofrece dos modalidades para consumir alimentos, una es a través de la cooperativa
@@ -199,8 +199,23 @@
     </div>
   </section>
 
-
-
+  <section class="sec-contacto1 py-4">
+    <div class="content-contacto container">
+      <div class="row">
+        <div class="col-12 offset-md-1 col-md-10">
+          <div class="header-contacto">
+            <p class="mb-3 mb-md-0">¿Deseas visitarnos personalmente?</p>
+            <p>¡ No esperes más !</p>
+          </div>
+          <p class="mt-3">
+            Para ofrecerte más informes, llena el siguiente formulario y
+            un asesor educativo se pondrá en contacto contigo a la brevedad.
+          </p>
+          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos ></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <?php require 'footer.view.php'; ?>
 
@@ -210,22 +225,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/headroom.min.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    var acc = document.getElementsByClassName("accordion-item");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
+  <script src="js/accordion.js"></script>
 </body>
 
 </html>

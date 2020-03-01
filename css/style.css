@@ -1539,6 +1539,12 @@ button.btn {
 }
 
 @media (min-width: 992px) {
+  .text-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .content-service p {
     font-size: 1.125rem;
     padding-top: 0.3125rem;
@@ -1589,7 +1595,7 @@ button.btn {
   box-shadow: .5rem 2px .5rem rgba(0, 0, 0, 0.3);
 }
 
-.active, .accordion-item:hover {
+.active-item, .accordion-item:hover {
   background-color: #03224e;
 }
 
@@ -1601,7 +1607,7 @@ button.btn {
   margin-left: 5px;
 }
 
-.active:after {
+.active-item:after {
   content: "\2212";
 }
 
@@ -1668,8 +1674,8 @@ button.btn {
   content: "";
   width: 100%;
   position: absolute;
-  background: -webkit-linear-gradient(left, #089588, #03224e);
-  background: linear-gradient(90deg, #089588, #03224e);
+  background: rgb(10,98,172);
+  background: linear-gradient(90deg, #075ba2, #03224e);
   top: 0;
   bottom: 0;
   left: 0;
