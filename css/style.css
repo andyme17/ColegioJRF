@@ -352,6 +352,10 @@ header {
   position: relative;
 }
 
+.content-back{
+  position: relative;
+}
+
 .img-back-header {
   background-image: url("../img/img-instalacion1.jpg");
   background-position: center center;
@@ -1272,6 +1276,7 @@ button.btn {
 
 .text-horario {
   color: #03224e;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -1548,179 +1553,107 @@ button.btn {
 }
 
 /*After school section*/
+
 .sec-after {
-  background: #dcf1f4;
+  background:#dcf1f4;
 }
 
-.content-after {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-@media (min-width: 768px) {
-  .content-after {
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .content-after .item-extra {
-    -webkit-flex-basis: calc(33.3% - 1rem);
-    -ms-flex-preferred-size: calc(33.3% - 1rem);
-    flex-basis: calc(33.3% - 1rem);
+@media(min-width: 768px) {
+  .accordion{
+    margin: 1.5rem auto;
+    width: 80%; 
   }
 }
 
-.item-extra {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+@media(min-width: 992px) {
+  .accordion{
+    margin: 1.5rem auto;
+    width: 70%; 
+  }
+}
+
+.accordion-item{
+  background-color: #0a457b;
   color: #fff;
-  position: relative;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none; 
+  outline: none;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600; 
+  transition: 0.4s; 
+  margin-bottom: 1px;
+  box-shadow: .5rem 2px .5rem rgba(0, 0, 0, 0.3);
+}
+
+.active, .accordion-item:hover {
+  background-color: #03224e;
+}
+
+.accordion-item:after {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.desc-service{
+  padding: 0 20px 0 25px;
+  background-color: #fff;
+  max-height: 0;
   overflow: hidden;
-  text-align: center;
-  background: #03224e;
+  transition: max-height 0.2s ease-out;
+  position: relative;
+  box-shadow: .5rem 2px .5rem rgba(0, 0, 0, 0.3);
 }
 
-.item-extra img {
-  opacity: 1;
-  width: 100%;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-
-.item-extra .content-extra {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.content-extra h4 {
-  width: 80%;
-}
-
-.item-extra .content-extra:before {
-  position: absolute;
-  top: 30%;
-  right: 1.875rem;
-  bottom: 30%;
-  left: 1.875rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+.desc-service::before{
   content: "";
-  opacity: 1;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
+  position: absolute;
+  width: .6rem;
+  height: 100%;
+  background-color: #f8b624;
+  top: 0;
+  left: 0;
 }
 
-@media (min-width: 768px) {
-  .item-extra .content-extra:before {
-    top: 25%;
-    bottom: 25%;
+.desc-service p{
+  padding: 1rem 0;
+  color: #03224e;
+}
+
+.img-service{
+  padding-bottom: 1rem;
+}
+
+@media(min-width: 768px) {
+  .desc-service p{
+    padding-left: 10px ;    
+  }
+
+  .img-service{
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: 1200px) {
-  .item-extra .content-extra:before {
-    opacity: 0;
-    background-color: #ffffff;
-  }
-}
-
-.item-extra h4 {
-  color: #fff;
-  opacity: 1;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s, transform 0.35s;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
-@media (min-width: 1200px) {
-  .item-extra h4 {
-    opacity: 0;
-    -webkit-transform: translate3d(0%, 50%, 0);
-    transform: translate3d(0%, 50%, 0);
-  }
-}
-
-.item-extra img {
-  opacity: 0.45;
-}
-
-@media (min-width: 1200px) {
-  .item-extra img {
-    opacity: 1;
+@media(min-width: 1200px) {
+  .desc-service p{
+    padding-left: 20px ;    
   }
 
-  .item-extra:hover img {
-    opacity: 0.3;
-  }
-}
-
-.item-extra:hover .content-extra h4 {
-  opacity: 1;
-  -webkit-transform: translate3d(0%, 0%, 0);
-  transform: translate3d(0%, 0%, 0);
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
-.item-extra:hover .content-extra:before {
-  background: rgba(255, 255, 255, 0);
-  top: 3.125rem;
-  bottom: 3.125rem;
-  opacity: 1;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-@media (min-width: 768px) {
-  .item-extra:hover .content-extra:before {
-    top: 1.25rem;
-    bottom: 1.25rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .item-extra:hover .content-extra:before {
-    top: 1.875rem;
-    bottom: 1.875rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .item-extra:hover .content-extra:before {
-    top: 3.125rem;
-    bottom: 3.125rem;
-  }
+  .img-service{
+    width: 65%;
+    margin: 0 auto;
+  }  
 }
 
 /*inscription section*/

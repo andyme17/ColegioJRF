@@ -63,109 +63,141 @@
     </div>
   </main>
 
-  <div class="sec-after py-4">
-    <div class="container text-center">
-      <h3 class="text-center">Clases Afterschool</h3>
-      <p class="pt-3 text-horario">
-        Con el fin de complementar con el desarrollo de sus hijos ofrecemos las siguientes clases especiales, en el horario de 14:00 a 15:00 hrs. 
-        También ofrecemos algunos talleres para el público en general en el mismo horario. 
+  <section class="sec-after py-4">
+    <div class="container">
+      <h2 class="text-center">Clases Afterschool</h2>
+      <p class="py-3 text-horario">
+        En el horario de 14:00 a 15:00 hrs ofrecemos:
       </p>
-      <div class="content-after container pt-4">
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-ingles.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Tareas dirigidas</h4>
+      <div class="accordion">
+        <button class="accordion-item">Tareas dirigidas</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-ingles.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Francés para niños</h4>
+        <button class="accordion-item">Fránces para niños</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-danza.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Danza Folklorica</h4>
+        <button class="accordion-item">Danza Folklorica</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-danza.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-danza.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Ballet</h4>
+        <button class="accordion-item">Ballet</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-danza.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-taekwondo.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Lima Lama</h4>
+        <button class="accordion-item">Lima Lama</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-taekwondo.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-taekwondo.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Taekwondo</h4>
+        <button class="accordion-item">Taekwondo</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-taekwondo.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Zumba</h4>
+        <button class="accordion-item">Zumba</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Robótica</h4>
+        <button class="accordion-item">Róbotica</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-ingles.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Cultura General</h4>
+        <button class="accordion-item">Cultura General</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Francés para adultos</h4>
+        <button class="accordion-item">Fránces para adultos</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
         </div>
-        <div class="item-extra mb-3">
-          <img src="<?php echo PATH; ?>img/imgs-ingles.jpg" alt="Imagen ilustrativa de" class="img-fluid">
-          <div class="content-extra">
-            <h4>Hebreo para adultos</h4>
+        <button class="accordion-item">Hebreo para adultos</button>
+        <div class="desc-service">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+          </p>
+          <div class="img-service">
+            <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
           </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <section class="img-inscrip py-4 py-lg-5">
+    <div class="container content-inscrip mx-auto">
+      <h4 class="mb-3">¿Te interesa formar parte de la comunidad del Colegio Jesús Romero Flores?</h4>
+      <h5>Inscríbete y se parte de nuestra comunidad</h5>
+      <a href="<?php echo PATH; ?>inscripciones.php" class="btn btn-outline-light mt-4">Click aquí ></a>
+    </div>
+  </section>
+
+  <section class="img-back py-4">
+    <div class="content-service container mx-auto">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-0 col-xl-7 order-2 ">
+          <img class="img-fluid pt-3 pt-lg-0" src="<?php echo PATH; ?>img/imgs-comida.jpg" alt="Foto del servicio de comida del preescolar">
+        </div>
+        <div class="col-12 col-lg-5 order-lg-2 py-xl-4">
+          <h3>Comedor</h3>
+          <p>
+            El colegio JRF ofrece dos modalidades para consumir alimentos, una es a través de la cooperativa
+            escolar donde se venden complementos a su lunch y la otra, a petición de los padres, se les
+            proporciona comida completa en dos horarios: 10:30 am (Receso) y 2 pm (after School).
+          </p>
         </div>
       </div>
     </div>
-  </div>
-
-  <section class="img-inscrip py-4 py-lg-5">
-        <div class="container content-inscrip mx-auto">
-            <h4 class="mb-3">¿Te interesa formar parte de la comunidad del Colegio Jesús Romero Flores?</h4>
-            <h5>Inscríbete y se parte de nuestra comunidad</h5>
-            <a href="<?php echo PATH; ?>inscripciones.php" class="btn btn-outline-light mt-4">Click aquí ></a>
-        </div>
-    </section>
-
-  <section class="img-back py-4">
-        <div class="content-service container mx-auto">
-            <div class="row">
-                <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-0 col-xl-7 order-2 ">
-                    <img class="img-fluid pt-3 pt-lg-0" src="<?php echo PATH; ?>img/imgs-comida.jpg" alt="Foto del servicio de comida del preescolar">
-                </div>
-                <div class="col-12 col-lg-5 order-lg-2 py-xl-4">
-                    <h3>Comedor</h3>
-                    <p>
-                      El colegio JRF ofrece dos modalidades para consumir alimentos, una es a través de la cooperativa 
-                      escolar donde se venden complementos a su lunch y la otra, a petición de los padres, se les 
-                      proporciona comida completa en dos horarios: 10:30 am (Receso) y 2 pm (after School).
-                    </p>                    
-                </div>
-            </div>
-        </div>
-    </section>
+  </section>
 
 
 
@@ -178,6 +210,22 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/headroom.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    var acc = document.getElementsByClassName("accordion-item");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
