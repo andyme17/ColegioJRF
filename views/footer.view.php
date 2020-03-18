@@ -34,7 +34,7 @@
                         <i class="fas fa-envelope icon"></i>
                     </div>
                     <div class="col-10 pl-4 pl-lg-3">
-                        <p>colegiojrf@live.com.mx</p>
+                        <a href="mailto:colegiojrf@live.com.mxsubject=feedback"><p>colegiojrf@live.com.mx</p></a>
                     </div>
                 </div>
                 <div class="row pl-2 pb-3">
@@ -47,8 +47,8 @@
                 </div>
                 <div class="redes row pl-4 pt-2">
                     <h5>Siguenos en:</h5>
-                    <a href="https://www.facebook.com/ColeJRF/?rf=281981325186599"><i class="fab fa-facebook icon-2 ml-4"></i></a>
-                    <a href="#"> <i class="fab fa-twitter icon-2 ml-4"></i></a>
+                    <a href="https://www.facebook.com/ColeJRF/?rf=281981325186599" target="_blank"><i class="fab fa-facebook icon-2 ml-4"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"> <i class="fab fa-twitter icon-2 ml-4"></i></a>
                 </div>
             </div>
         </div>
