@@ -49,7 +49,7 @@
           Anexo al Colegio Jesús Romero Flores contamos con el <span>Jardín de Niños María Isabel</span>
           que ofrece una educación de calidad a los pequeños de <span>nivel preescolar.</span>
         </p>
-        <a href="#" class="btn btn-primary mt-3 mt-xl-4">Visítanos > </a>
+        <a href="https://villainfantilmi.edu.mx/" target="_blank" class="btn btn-primary mt-3 mt-xl-4">Visítanos > </a>
       </div>
     </div>
     <div class="img-kinder">

@@ -35,8 +35,8 @@
         }
 
         if (!$error_nombre && !$error_email && !$error_mensaje) {
-            $enviar_a = 'andy_me17133781@hotmail.com';
-            $asunto = 'Correo enviado desde página villainfantilmi.edu.mx';
+            $enviar_a = 'colegiojrf@live.com.mx';
+            $asunto = 'Correo enviado desde colegiojesusromero.edu.mx';
             $mensaje_enviado = "De: $nombre \n";
             $mensaje_enviado .= "Correo: $email \n";
             $mensaje_enviado .= "Mensaje: " . $mensaje;
