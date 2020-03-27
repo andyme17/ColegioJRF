@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Colegio Jesús Romero Flores</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
   <?php require 'nav-bar.view.php'; ?>
 
-  <section class="img-back-header h-md-back-2 py-4">
+  <section class="img-back-header">
     <div class="content-back-header container mx-auto">
       <h2>Nuestros servicios</h2>
       <hr>
       <p class="text-back-header">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, et nam tenetur reiciendis minus nesciunt rem
-        amet impedit nulla qui, fugiat earum perferendis iusto vitae.(definir).
+        Se ofrece el servicio educativo a nivel primaria con horario de 8 a.m. a 2 p.m. cubriendo los planes y 
+        programas de la SEP, así como actividades adiciónales para lograr una formación integral de los niños 
+        y así obtengan un estándar elevado que les permita acceder a una educación del mas alto nivel.
+        Opcionalmente se ofrece el servicio afterschool de 2 pm a 4 pm.
       </p>
     </div>
   </section>
@@ -67,108 +54,159 @@
     <div class="container">
       <h2 class="text-center">Clases Afterschool</h2>
       <p class="py-3 text-horario">
-        En el horario de 14:00 a 15:00 hrs ofrecemos:
+        En el horario de 14:00 a 16:00 hrs ofrecemos:
       </p>
       <div class="accordion">
+
         <button class="accordion-item">Tareas dirigidas</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-ingles.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
-          </div>
+          <div class="my-3">
+            <p>Con el fin de apoyar a los padres en la realización de tareas con una maestra capacitada para guiarlo paso
+              a paso, para ello se le proporciona todos los materiales y recursos que el niño requiera.
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-tareas.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
+          </div>          
         </div>
+
         <button class="accordion-item">Fránces para niños</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>En horario afterschool se frecen clases de francés para niños con el objetivo de obtener un nivel avanzado
+              del idioma con material exclusivo para este horario y también asesorar la realización de tareas.
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
           </div>
         </div>
+
         <button class="accordion-item">Danza Folklorica</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-danza.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>Ofrecemos clases de danza folklórica a los niños, porque les ayuda a tener un adecuado desarrollo mental y cognitivo,
+              ya que se ejercita la coordinación fina que permite una mejor capacidad motriz, el trabajo en equipo y la diciplina.
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-danza.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
           </div>
-        </div>
+        </div>  
+
         <button class="accordion-item">Ballet</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-danza.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>En las clases de ballet puede obtener muchos beneficios como el corregir la mala postura, mejorar la coordinación y
+               el equilibrio, así como desarrollarse física e intelectualmente. Por esta razón buscamos que los niños interesados 
+               tengan una oferta accesible a esta actividad.
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-ballet.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
           </div>
-        </div>
+        </div> 
+
         <button class="accordion-item">Lima Lama</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-taekwondo.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>
+              El Lima-lama crea personas sanas de cuerpo y mente, y comenzar en edades tempranas le proporcionará al niño una
+              serie de herramientas que le servirán de adulto para templar su carácter, sentirse más seguro y ser más controlado.
+            </p>
+            <p>El colegio Jesús Romero ofrece clases de lima-lama y algunos de sus alumnos ya obtuvieron cinta café e incluso 
+              continúan su entrenamiento después de concluir su primaria.
+            </p>         
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-lima.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
           </div>
         </div>
+
         <button class="accordion-item">Taekwondo</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-taekwondo.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>Los padres tienen más de una razón para apuntar a sus hijos a clases de Tae-kwon-do porque los beneficios de este
+              ejercicio son muy positivos para sus pequeños, en el aspecto físico permite desarrollar capacidades como la fuerza,
+              la elasticidad, así como un desarrollo armónico y funcional de todo su organismo, además de ser un deporte olímpico
+              mundialmente practicado.
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-taekwondo.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
           </div>
         </div>
+
         <button class="accordion-item">Zumba</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>Todos queremos lo mejor para nuestros hijos y por eso hay que favorecer buenos hábitos desde que son pequeños, la zumba 
+              para niños es un buen entrenamiento para los más pequeños que les aporta muchísimos beneficios, entre muchas cosas, mejora
+              la coordinación de nuestro cuerpo y en los más pequeños es un factor muy importante a desarrollar y mejorar en esas edades,
+              además esta clase es muy divertida, ya que mezcla diferentes ritmos muy buenos y bailables para los más pequeños.
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
           </div>
         </div>
+
         <button class="accordion-item">Róbotica</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>En nuestra clase de robótica, los niños aprenden a construir y programar robots paso a paso. A medida que logran sus 
+              objetivos con el robot que crean, disfrutan del proceso, lo que les permite aprender aún más.
+            </p>
+            <p>El aprendizaje de la robótica también fortalece sus habilidades en matemáticas y física, mientras que simultáneamente
+              trabajan en sus habilidades de resolución de problemas y trabajo en equipo, te invitamos a unirte y darle esta oportunidad
+              de aprendizaje a los futuros profesionales que harán grande México.</p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-robotica.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
           </div>
         </div>
+
         <button class="accordion-item">Cultura General</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>Cultura general es una actividad que introduce a los niños en temas de historia, biología, astronomía y muchos mas
+              a través de videos elaborados especialmente para niños por el biólogo de la UNAM Roberto Cuevas que tiene una amplia 
+              experiencia docente, él ideó un método de enseñanza basado en atraer la atención de los niños partiendo de caricaturas
+              e incluso juegos de video y una vez captado su interés, se lleva a aprender conocimientos formales.
+            </p>
+            <p>Esta es la materia más exitosa y es sorprendente el grado de conocimiento que los niños han adquirido en temas como
+              la formación de tornados, plagas, historia de Grecia etc.
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-zumba.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
           </div>
         </div>
+
         <button class="accordion-item">Fránces para adultos</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+          <div class="my-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+              iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>          
           </div>
         </div>
+
         <button class="accordion-item">Hebreo para adultos</button>
         <div class="desc-service">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
-            iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
-          </p>
-          <div class="img-service">
-            <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
-          </div>
+          <div class="my-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum, deserunt quam illo
+               iste eum rem amet veniam voluptate? Tempore voluptatibus similique beatae voluptas, omnis eum in
+            </p>
+            <div class="img-service">
+              <img src="<?php echo PATH; ?>img/imgs-frances.jpg" alt="Imagen ilustrativa del servicio" class="img-fluid">
+            </div>
+          </div>  
         </div>
+                 
       </div>
     </div>
   </section>
@@ -224,7 +262,9 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/headroom.min.js"></script>
-  <script src="js/main.js"></script>
+
+  <!-- Custom javascript files -->
+  <script src="js/nav-bar.js"></script>  
   <script src="js/accordion.js"></script>
 </body>
 
