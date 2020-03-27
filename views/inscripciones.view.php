@@ -15,7 +15,7 @@
 <body>
   <?php require 'nav-bar.view.php'; ?>
   
-  <section class="img-back-header h-md-back-2 py-4">
+  <section class="img-back-header">
     <div class="content-back-header container mx-auto">
       <h2>Inscripciones</h2>
       <hr>
