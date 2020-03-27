@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
 
   <?php require 'footer.view.php'; ?>
 
@@ -64,9 +64,19 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/headroom.min.js"></script>
   <script src="js/pgwslideshow.min.js"></script>
-  <script src="js/main.js"></script>
 
   <!-- Custom javascript files -->
-  <script src="js/nav-bar.js"></script>  
+  <script src="js/nav-bar.js"></script>
+  <script>
+    /** Slide gallery script **/
+    $(document).ready(function() {
+      var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow(); //puglin is initialized for gallery
+
+      pgwSlideshow.reload({ //configuring the plugin
+        autoSlide: false,
+        maxHeight: 560
+      });
+    });
+  </script>
 </body>
 </html>
