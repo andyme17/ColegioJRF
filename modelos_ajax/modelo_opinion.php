@@ -20,22 +20,17 @@
             $email_to = "colegiojrf@live.com.mx";
             $email_subject = "Comentario o sugerencia del servicio del Colegio Jesús Romero Flores";
             $email_message = "Contenido del mensaje: \n\n";
-            $email_message .= "Nombre: " . $nombre;
-            $email_message .= "\n Correo: " . $email;
-            $email_message .= "\n Calificación: " . $votacion . "estrellas";
-            $email_message .= "\n Comentario o sugerencia: " . $mensaje;
+            $email_message = " Nombre: " . $nombre;
+            $email_message = "\n Correo: " . $email;
+            $email_message = "\n Calificación: " . $votacion . " estrellas";
+            $email_message = "\n Comentario o sugerencia: " . $mensaje;
 
             $header = "De: " . $email . "\r\n";
 
-            #mail podría fallar, pase lo que pase, la variable será true o false
-           /*Esto se descomenta cuando se realicen pruebas  
+            #mail podría fallar, pase lo que pase, la variable será true o false           
             if(mail($email_to, $email_subject, $email_message, $header)){
                 $respuesta =  true;
-            } */
-
-            //las siguientes dos líneas se tienen que comentar o bien eliminar al final
-            mail($email_to, $email_subject, $email_message, $header); 
-            $respuesta =  true;
+            } 
         }
     }
     
