@@ -73,7 +73,7 @@
         <button class="accordion-item">Fránces para niños</button>
         <div class="desc-service">
           <div class="my-3">
-            <p>En horario afterschool se frecen clases de francés para niños con el objetivo de obtener un nivel avanzado
+            <p>En horario afterschool se ofrecen clases de francés para niños con el objetivo de obtener un nivel avanzado
               del idioma con material exclusivo para este horario y también asesorar la realización de tareas.
             </p>
             <div class="img-service">
