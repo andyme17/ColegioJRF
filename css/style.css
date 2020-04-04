@@ -1607,12 +1607,11 @@ label{
   transition: all .5s ease;
 } 
 
-#error{
+.error{
   color: #a82626;
   text-align: left;
   font-size: 14px;
-  padding: 0.5rem;
-  transition: all .5s ease;
+  padding: 0.5rem;  
 } 
 
 #loaders {
@@ -1817,4 +1816,120 @@ label{
 .content-inscrip h4,
 .content-inscrip h5 {
   color: #fff;
+}
+
+/*Inscripctions page*/
+.content-form{
+  position: relative;
+}
+
+.f1{
+  position: relative;
+  padding: 1.5625rem;
+  background: #fff;
+  top: 0;
+  left: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#list-doc{
+  position: relative;
+  padding: 1.5625rem;
+  background: #fff;
+  display: none;
+  top: 0;
+  left: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.f1 h5 {
+  color: #17a2b8;
+}
+
+.p-label {
+  font-family: "Roboto", sans-serif;
+  color: #6c757d;
+  font-weight: 600;  
+  margin: 1rem 0 1.4rem 0.3rem;
+}
+
+label{
+  font-family: "Roboto", sans-serif;
+  color: #03224e;
+  font-size: 1rem;
+  font-weight: 500;  
+}
+
+@media (min-width: 768px) {
+  label{
+    font-size: 1.125rem;
+  }
+}
+
+.form-radio{
+  margin-left: 0.3rem;
+}
+
+.form-radio .form-row label{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #212529;
+}
+
+.f1 select{
+  font-family: "Roboto", sans-serif;
+}
+
+.f1 .form-row .group {
+  margin: 1rem 0;
+}
+
+.f1-button{
+  text-align: right;
+  margin-top: 30px;
+}
+
+.successful{
+  padding: 1rem;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  border: 0.0625rem solid #4caf4fa2;
+  background-color: #4caf50;
+  transition: opacity 0.6s ease-in-out;
+  display: none; 
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
+}
+
+.fa-file-pdf{
+  color:#fcc224;
+  font-size: 120px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 5px;
+}
+
+.fa-file-pdf:hover{
+  font-size: 130px;
+  color: #17a2b8;
+}
+
+.link-pdf{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 2.5rem;
+}
+
+a.link-pdf{
+  color: #03224e;
+}
+
+input#esc-procedencia:disabled {
+  background-color: #adb5bd0f;
 }
