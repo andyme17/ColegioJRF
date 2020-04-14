@@ -1,6 +1,6 @@
 <?php require 'nav-bar.view.php'; ?>
 
-<main class="img-back py-3 py-md-4">
+<main class="img-back py-3 py-md-5">
     <div class="container">
         <div class="row">
             <div class="col-12 offset-lg-2 col-lg-8">
