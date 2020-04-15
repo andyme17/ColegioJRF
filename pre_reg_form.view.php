@@ -86,6 +86,10 @@
             margin-top: 40px;
         }
 
+        .mt-20 {
+            margin-top: 20px;
+        }
+
         .p-10 {
             padding: 10px;
             font-weight: bold;
@@ -99,18 +103,6 @@
 
         .text-left {
             text-align: left;
-        }
-
-        .datos-nombre {
-            border: 1px solid #363535;
-            border-collapse: collapse;
-        }
-
-        .datos-nombre td {
-            border: 1px solid #363535;
-            text-align: center;
-            padding: 5px;
-            width: 210px;
         }
 
         .datos td {
@@ -130,6 +122,10 @@
             text-align: left;
         }
 
+        .w-5 {
+            width: 5px;
+        }
+        
         .w-15 {
             width: 15px;
         }
@@ -174,8 +170,12 @@
             width: 200px;
         }
 
-        .w-290 {
-            width: 290px;
+        .w-210 {
+            width: 210px;
+        }
+
+        .w-280 {
+            width: 280px;
         }
 
         .w-380 {
@@ -190,17 +190,7 @@
             background-color: #f5d787;
             border: 1px solid #363535;
             text-align: center;
-        }
-
-        .salto-1 {
-            background-color: #17a2b8;
-            height: 50px;
-        }
-
-        .salto-2 {
-            background-color: #f5d787;
-            height: 20px;
-        }
+        }      
     </style>
 </head>
 
@@ -239,16 +229,19 @@
             </tr>
         </table>
 
-        <table class="datos-nombre my-15">
+        <table class="datos-3 my-15">
             <tr>
-                <td class="fuente-campo"><?php if (($ap_pat_alu)) echo strtoupper($ap_pat_alu); ?></td>
-                <td class="fuente-campo"><?php if (($ap_mat_alu)) echo strtoupper($ap_mat_alu); ?></td>
-                <td class="fuente-campo"><?php if (($nombre_alu)) echo strtoupper($nombre_alu); ?></td>
+                <td>Apellido paterno:</td>
+                <td class="w-180 campo"><?php if (($ap_pat_alu)) echo strtoupper($ap_pat_alu); ?></td>
+                <td>Apellido materno:</td>
+                <td class="w-180 campo"><?php if (($ap_mat_alu)) echo strtoupper($ap_mat_alu); ?></td>
             </tr>
-            <tr class="campo">
-                <td>Apellido Paterno</td>
-                <td>Apellido Materno</td>
-                <td>Nombre(s)</td>
+        </table>
+
+        <table class="datos-3 my-15">
+            <tr>
+                <td>Nombre:</td>
+                <td class="campo w-380"><?php if (($lugar_nac)) echo strtoupper($nombre_alu); ?></td>
             </tr>
         </table>
 
@@ -271,17 +264,17 @@
         <table class="datos-2 my-15">
             <tr>
                 <td>Lugar de nacimiento:</td>
-                <td class="campo w-380"><?php if (($lugar_nac)) echo strtoupper($lugar_nac); ?></td>
+                <td class="campo w-280"><?php if (($lugar_nac)) echo strtoupper($lugar_nac); ?></td>
             </tr>
         </table>
 
         <table class="datos-3 my-15">
             <tr>
                 <td>Tipo de sangre:</td>
-                <td class="w-150 campo"><?php if (($tipo_s)) echo strtoupper($tipo_s); ?></td>
+                <td class="w-180 campo"><?php if (($tipo_s)) echo strtoupper($tipo_s); ?></td>
                 <td class="w-10"></td>
                 <td class="w-40">Religión:</td>
-                <td class="w-150 campo"><?php if (($religion)) echo strtoupper($religion); ?></td>
+                <td class="w-180 campo"><?php if (($religion)) echo strtoupper($religion); ?></td>
             </tr>
         </table>
 
@@ -290,24 +283,24 @@
         <table class="datos-3 my-15">
             <tr>
                 <td>Calle:</td>
-                <td class="campo w-480"><?php if (($calle_alu)) echo strtoupper($calle_alu); ?></td>
+                <td class="campo w-380"><?php if (($calle_alu)) echo strtoupper($calle_alu); ?></td>
             </tr>
         </table>
 
         <table class="datos-3 my-15">
             <tr>
                 <td>No. int:</td>
-                <td class="w-200 campo"><?php if (($num_int_alu)) echo strtoupper($num_int_alu); ?></td>
+                <td class="w-210 campo"><?php if (($num_int_alu)) echo strtoupper($num_int_alu); ?></td>
                 <td class="w-10"></td>
                 <td>No. ext:</td>
-                <td class="w-200 campo"><?php if (($num_ext_alu)) echo strtoupper($num_ext_alu); ?></td>
+                <td class="w-210 campo"><?php if (($num_ext_alu)) echo strtoupper($num_ext_alu); ?></td>
             </tr>
         </table>
 
         <table class="datos-3 my-15">
             <tr>
                 <td>Colonia:</td>
-                <td class="w-200 campo"><?php if (($colonia_alu)) echo strtoupper($colonia_alu); ?></td>
+                <td class="w-210 campo"><?php if (($colonia_alu)) echo strtoupper($colonia_alu); ?></td>
                 <td>Alcaldía o Municipio:</td>
                 <td class="w-180 campo"><?php if (($alcaldia_alu)) echo strtoupper($alcaldia_alu); ?></td>
             </tr>
@@ -317,6 +310,7 @@
             <tr>
                 <td>Entidad Fedarativa:</td>
                 <td class="w-250 campo"><?php if (($entidad_alu)) echo strtoupper($entidad_alu); ?></td>
+                <td class="w-5"></td>
                 <td>Código Postal: </td>
                 <td class="w-60 campo"><?php if (($cp_alu)) echo $cp_alu; ?></td>
             </tr>
@@ -326,36 +320,39 @@
             <tr>
                 <td>¿Ha estado inscrito en otra escuela?</td>
                 <td class="w-10"></td>
-                <td>No</td>
-                <td class="campo w-20"><?php if (($esc_proc == 'no')) echo 'X'; ?></td>
-                <td class="w-10"></td>
                 <td>Si</td>
                 <td class="campo w-20"><?php if (($esc_proc == 'si')) echo 'X'; ?></td>
+                <td class="w-10"></td>
+                <td>No</td>
+                <td class="campo w-20"><?php if (($esc_proc == 'no')) echo 'X'; ?></td>
             </tr>
-        </table>
+        </table>        
+    </div>
 
+    <div class="container mt-40">
         <table class="datos-3 my-15">
             <tr>
                 <td>Nombre de la escuela de procedencia:</td>
                 <td class="campo w-380"><?php if (($esc_procedencia)) echo strtoupper($esc_procedencia); ?></td>
             </tr>
         </table>
-    </div>
-    
-    <div class="container mt-40">
-        <h4>Datos de la madre, padre o tutor</h4>
-        <div></div>
 
-        <table class="datos-nombre my-15">
+        <h4 class="mt-20">Datos de la madre, padre o tutor</h4>
+        <div class="separador"></div>
+
+        <table class="datos-3 my-15">
             <tr>
-                <td class="fuente-campo"><?php if (($ap_pat_tutor)) echo strtoupper($ap_pat_tutor); ?></td>
-                <td class="fuente-campo"><?php if (($ap_mat_tutor)) echo strtoupper($ap_pat_tutor); ?></td>
-                <td class="fuente-campo"><?php if (($nombre_tutor)) echo strtoupper($nombre_tutor); ?></td>
+                <td>Apellido paterno:</td>
+                <td class="w-180 campo"><?php if (($ap_pat_tutor)) echo strtoupper($ap_pat_tutor); ?></td>
+                <td>Apellido materno:</td>
+                <td class="w-180 campo"><?php if (($ap_mat_tutor)) echo strtoupper($ap_mat_tutor); ?></td>
             </tr>
-            <tr class="campo">
-                <td>Apellido Paterno</td>
-                <td>Apellido Materno</td>
-                <td>Nombre(s)</td>
+        </table>
+
+        <table class="datos-3 my-15">
+            <tr>
+                <td>Nombre:</td>
+                <td class="campo w-380"><?php if (($nombre_tutor)) echo strtoupper($nombre_tutor); ?></td>
             </tr>
         </table>
 
@@ -363,9 +360,9 @@
             <tr>
                 <td>Edad:</td>
                 <td class="w-40 campo"><?php if (($edad_tutor)) echo $edad_tutor; ?></td>
-                <td class="w-10"></td>
+                <td class="w-15"></td>
                 <td>Último grado de estudios</td>
-                <td class="w-290 campo"><?php if (($grado_estudio)) echo strtoupper($grado_estudio); ?></td>
+                <td class="w-280 campo"><?php if (($grado_estudio)) echo strtoupper($grado_estudio); ?></td>
             </tr>
         </table>
 
@@ -380,25 +377,18 @@
 
         <table class="datos-3 my-15">
             <tr>
-                <td>Calle:</td>
-                <td class="campo w-480"><?php if (($calle_tutor)) echo strtoupper($calle_tutor); ?></td>
-            </tr>
-        </table>
-
-        <table class="datos-3 my-15">
-            <tr>
                 <td>No. int:</td>
-                <td class="w-200 campo"><?php if (($num_int_tutor)) echo strtoupper($num_int_tutor); ?></td>
+                <td class="w-210 campo"><?php if (($num_int_tutor)) echo strtoupper($num_int_tutor); ?></td>
                 <td class="w-10"></td>
                 <td>No. ext:</td>
-                <td class="w-200 campo"><?php if (($num_ext_tutor)) echo strtoupper($num_ext_tutor); ?></td>
+                <td class="w-210 campo"><?php if (($num_ext_tutor)) echo strtoupper($num_ext_tutor); ?></td>
             </tr>
         </table>
 
         <table class="datos-3 my-15">
             <tr>
                 <td>Colonia:</td>
-                <td class="w-200 campo"><?php if (($colonia_tutor)) echo strtoupper($colonia_tutor); ?></td>
+                <td class="w-210 campo"><?php if (($colonia_tutor)) echo strtoupper($colonia_tutor); ?></td>
                 <td>Alcaldía o Municipio:</td>
                 <td class="w-180 campo"><?php if (($alcaldia_tutor)) echo strtoupper($alcaldia_tutor); ?></td>
             </tr>
@@ -408,11 +398,12 @@
             <tr>
                 <td>Entidad Fedarativa:</td>
                 <td class="w-250 campo"><?php if (($entidad_tutor)) echo strtoupper($entidad_tutor); ?></td>
-                <td>Código Postal:</td>
-                <td class="w-60 campo"><?php if (($cp_tutor)) echo ($cp_tutor); ?></td>
+                <td class="w-5"></td>
+                <td>Código Postal: </td>
+                <td class="w-60 campo"><?php if (($cp_tutor)) echo $cp_tutor; ?></td>
             </tr>
         </table>
-
+        
         <p class="p-10">Datos de contacto</p>
 
         <table class="datos-3 my-15">
@@ -426,7 +417,7 @@
         </table>
         <table class="datos-3 my-15">
             <tr>
-                <td>Tel. oficina:</td>
+                <td>Teléfono oficina:</td>
                 <td class="w-95 campo"><?php if (($tel_ofi)) echo ($tel_ofi); ?></td>
                 <td>Correo electrónico</td>
                 <td class="w-250 campo"><?php if (($email_tutor)) echo strtolower($email_tutor); ?></td>
