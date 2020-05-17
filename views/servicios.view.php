@@ -215,7 +215,7 @@
     <div class="container content-inscrip mx-auto">
       <h4 class="mb-3">¿Te interesa formar parte de la comunidad del Colegio Jesús Romero Flores?</h4>
       <h5>Inscríbete y se parte de nuestra comunidad</h5>
-      <a href="<?php echo PATH; ?>inscripciones.php" class="btn btn-outline-light mt-4">Click aquí ></a>
+      <a href="<?php echo PATH; ?>inscripciones.php" class="btn btn-outline-light mt-4">Click aquí&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
     </div>
   </section>
 
@@ -249,7 +249,7 @@
             Para ofrecerte más informes, llena el siguiente formulario y
             un asesor educativo se pondrá en contacto contigo a la brevedad.
           </p>
-          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos ></a>
+          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
         </div>
       </div>
     </div>

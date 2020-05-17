@@ -5,18 +5,15 @@
         <div class="row">
             <div class="col-12 offset-lg-2 col-lg-8">
                 <div class="col-12 offset-md-1 col-md-10 text-center shadow" id="list-doc">
-                    <h4 class="pb-4">Acude a nuestras instalaciones</h4>
-                    <p class="p-3">
-                        Una vez concluido el formulario de Pre-Registro, acude a nuestras instalaciones
-                        para concluir con el proceso de inscripción presentando la documentación solicitada
-                        en el siguiente documento:
-                    </p>
+                    <h4 class="pb-4">¡Bienvenido!</h4>
+                    <p class="pb-3">Una vez llenado el formato de pre-registro, debes concluir tu proceso de inscripción.</p>
+                    <p>Para ello, <b>envía la documentación solicitada</b> en el siguiente documento PDF a <b>colegiojrf@gmail.com</b></p>
                     <a href="<?php echo PATH; ?>pdf/Requisitos-Colegio.pdf" class="link-pdf" download="documentacion_requerida.pdf">
                         <i class="far fa-file-pdf"></i>
                         <small>Da click en la imagen para descargar</small>
                     </a>
                     <div class="f1-buttons">
-                        <a class="btn btn-primary" href="<?php echo PATH; ?>inscripciones.php">Finalizar ></a>
+                        <a class="btn btn-primary" href="<?php echo PATH; ?>index.php">Finalizar&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
             </div>

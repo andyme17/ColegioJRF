@@ -50,7 +50,7 @@
             Para ofrecerte más informes, llena el siguiente formulario y
             un asesor educativo se pondrá en contacto contigo a la brevedad.
           </p>
-          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos ></a>
+          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
         </div>
       </div>
     </div>

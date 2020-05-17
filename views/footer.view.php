@@ -34,7 +34,7 @@
                         <i class="fas fa-envelope icon"></i>
                     </div>
                     <div class="col-10 pl-4 pl-lg-3">
-                        <a href="mailto:colegiojrf@live.com.mxsubject=feedback"><p>colegiojrf@live.com.mx</p></a>
+                        <a href="mailto:colegiojrf@gmail.comsubject=feedback"><p>colegiojrf@gmail.com</p></a>
                     </div>
                 </div>
                 <div class="row pl-2 pb-3">
@@ -42,7 +42,7 @@
                         <i class="fas fa-phone icon"></i>
                     </div>
                     <div class="col-10 pl-4 pl-lg-3">
-                        <p>55 70 59 39</p>
+                        <p>55 55 70 59 39</p>
                     </div>
                 </div>
                 <div class="redes row pl-4 pt-2">

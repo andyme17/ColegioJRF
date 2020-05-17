@@ -38,7 +38,7 @@
   <section class="sec-oferta py-4 py-md-5">
     <div class="container text-oferta">
       <h4>Conoce nuestra oferta educativa así como los diferentes servicios con los que contamos</h4>
-      <a href="<?php echo PATH; ?>servicios.php" class="btn btn-outline-light mt-4 mt-md-0">Ver más ></a>
+      <a href="<?php echo PATH; ?>servicios.php" class="btn btn-outline-light mt-4 mt-md-0">Ver más&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
     </div>
   </section>
 
@@ -49,7 +49,7 @@
           Anexo al Colegio Jesús Romero Flores contamos con el <span>Jardín de Niños María Isabel</span>
           que ofrece una educación de calidad a los pequeños de <span>nivel preescolar.</span>
         </p>
-        <a href="https://villainfantilmi.edu.mx/" target="_blank" class="btn btn-primary mt-3 mt-xl-4">Visítanos > </a>
+        <a href="https://villainfantilmi.edu.mx/" target="_blank" class="btn btn-primary mt-3 mt-xl-4">Visítanos&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
       </div>
     </div>
     <div class="img-kinder">
@@ -69,7 +69,7 @@
             Para ofrecerte más informes, llena el siguiente formulario y
             un asesor educativo se pondrá en contacto contigo a la brevedad.
           </p>
-          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos ></a>
+          <a href="<?php echo PATH; ?>contacto.php" class="btn btn-outline-light mt-4">Contáctanos&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
         </div>
       </div>
     </div>
@@ -182,7 +182,7 @@
     <div class="row container mx-auto">
       <div class="col-12 text-center">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#formOpinion">Dejar comentario o sugerencia ></button>
+        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#formOpinion">Dejar comentario o sugerencia&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
 
         <!-- Modal -->
         <div class="modal fade modal-form" id="formOpinion" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
@@ -240,10 +240,8 @@
                       <img id="spinner" src="img/spinner.gif">
                     </div>
                     <div class="btn-form-opinion">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        < Cerrar</button>
-                      <button type="submit" class="btn btn-form-primary" id="btnForm" name="submit" value="enviar">Enviar >
-                      </button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar&nbsp;&nbsp;<i class="fas fa-times"></i></button>
+                      <button type="submit" class="btn btn-form-primary" id="btnForm" name="submit" value="enviar">Enviar&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
                     </div>
                   </form>
                 </div>

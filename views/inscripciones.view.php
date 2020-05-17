@@ -403,7 +403,7 @@
                 <small class="text-secondary">* Todos los campos son obligatorios</small>
               </div>
               <div class="f1-button">
-                <button type="submit" class="btn btn-primary" id="btnForm" name="submit" value="enviar">Enviar ></button>
+                <button type="submit" class="btn btn-primary" id="btnForm" name="submit" value="enviar">Enviar&nbsp;&nbsp;<i class="fas fa-caret-right"></i></button>
               </div>
             </div>
           </form>
@@ -424,6 +424,6 @@
   <script src="js/nav-bar.js"></script>
   <script src="js/form-inscripcion.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>
