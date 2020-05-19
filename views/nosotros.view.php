@@ -4,12 +4,7 @@
     <div class="content-back-header container mx-auto">
       <h2>Historia</h2>
       <hr>
-      <p class="text-back-header">
-        El colegio fue fundado en 1988 con el objetivo de proporcionar una oferta
-        educativa del más alto nivel con los recursos tecnológicos y humanos que
-        permitan a nuestros alumnos continuar con su formación en las mejores
-        instituciones del país y llegar a ser profesionistas brillantes y exitosos.
-      </p>
+      <p class="text-back-header"><?php echo $init_msg['descripcion'];?></p>
     </div>
   </section>
   <section class="sec-mi-vi text-center">
@@ -20,21 +15,14 @@
             <h3>Misión</h3>
             <hr>
           </div>
-          <p class="text-justify">
-            Somos un colegio que forma personas comprometidas con la comunidad desde preescolar hasta primaria,
-            buscando la formación integral de los niños con valores como el respeto, la puntualidad, hábitos de
-            estudio y el amor a la patria, así se generara una sociedad más justa, preparada y exitosa para el futuro.
-          </p>
+          <p class="text-justify"><?php echo $mision_msg['descripcion'];?></p>
         </div>
         <div class="col-12 col-md-6 p-4">
           <div class="sec-mi-vi-header pb-3">
             <h3>Visión</h3>
             <hr>
           </div>
-          <p class="text-justify">
-            En el colegio Jesús Romero trabajamos para continuar siendo la mejor opción educativa para las familias
-            de Santa Fe ofreciendo una formación con valores trascendentes en un ambiente sano con excelentes
-            instalaciones, tecnologías de vanguardia y los mejores maestros para ser un orgullo de nuestra comunidad.</p>
+          <p class="text-justify"><?php echo $vision_msg['descripcion'];?></p>
         </div>
       </div>
     </div>
@@ -44,39 +32,28 @@
     <h2 class="text-center">Nuestro Equipo</h2>
     <div class="content-nosotros container">
       <div class="img-nosotros">
-        <img src="<?php echo PATH ?>img/imgp-primaria.jpg" class="img-nosotros img-fluid" alt="Imagen del personal del kinder">
+        <img src="<?php echo PATH ?>img/<?php echo $team_thumb['thumb'];?>" class="img-nosotros img-fluid" alt="Imagen del personal del kinder">
       </div>
       <div class="text-nosotros">
-        <p>
-          El colegio Jesús romero Flores se encuentra en un continuo proceso de mejora, tanto en sus instalaciones
-          como en sus planes de estudio y mecánicas de trabajo, esto incluye por supuesto a ustedes padres de familia.
-        </p>
+        <p><?php echo $team_msg['descripcion'];?></p>
       </div>
     </div>
+
     <div class="sec-admin container mx-auto pt-3 pt-md-5">
       <h3 class="text-center">Personal Administrativo</h3>
       <div class="row text-center pt-2">
-        <div class="col-12 col-md-4 pb-4 pb-md-0">
-          <img src="<?php echo PATH; ?>img\imgp-direc-grnl.jpg" alt="Fotografía de personal administrativo">
-          <h5>Lic. María Isabel Rincón</h5>
-          <hr>
-          <p> Directora General</p>
-        </div>
-        <div class="col-12 col-md-4 pb-4 pb-md-0">
-          <img src="<?php echo PATH; ?>img\imgp-direc-tec.jpg" alt="Fotografía de personal administrativo">
-          <h5>Lic. Patricia Lerma</h5>
-          <hr>
-          <p>Directora Técnica</p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src="<?php echo PATH; ?>img\imgp-coordinador.jpg" alt="Fotografía de personal administrativo">
-          <h5>Dr. Eduardo Rincón</h5>
-          <hr>
-          <p>Coordinador General</p>
-        </div>
+        <?php foreach($personal as $persona):?>
+          <div class="col-12 col-md-4 pb-4 pb-md-0">
+            <img src="<?php echo PATH; ?>img/<?php echo $persona['thumb']?>" alt="Fotografía de personal administrativo">
+            <h5><?php echo $persona['nombre'];?></h5>
+            <hr>
+            <p><?php echo $persona['cargo'];?></p>
+          </div>  
+        <?php endforeach;?>         
       </div>
     </div>
   </main>
+  
   <section class="sec-opinion py-4">
     <div class="container">
       <p class="mb-4">

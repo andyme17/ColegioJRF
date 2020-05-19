@@ -4,36 +4,17 @@
     <div class="content-back-header container mx-auto">
       <h2>Instalaciones</h2>
       <hr>
-      <p class="text-back-header">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, et nam tenetur reiciendis minus nesciunt rem
-        amet impedit nulla qui, fugiat earum perferendis iusto vitae.(definir).
-      </p>
     </div>
   </section>
+  
   <main class="img-back py-4">
     <div class="sec-gallery container">
       <ul class="pgwSlideshow">
-        <li>
-          <img src="<?php echo PATH; ?>img/img-instalacion1.jpg">
-        </li>
-        <li>
-          <img src="<?php echo PATH; ?>img/img-instalacion2.jpg">
-        </li>
-        <li>
-          <img src="<?php echo PATH; ?>img/img-instalacion3.jpg">
-        </li>
-        <li>
-          <img src="<?php echo PATH; ?>img/img-instalacion4.jpg">
-        </li>
-        <li>
-          <img src="<?php echo PATH; ?>img/img-instalacion5.jpg">
-        </li>
-        <li>
-          <img src="<?php echo PATH; ?>img/img-instalacion6.jpg">
-        </li>
-        <li>
-          <img src="<?php echo PATH; ?>img/img-instalacion7.jpg">
-        </li>
+        <?php foreach ($imagenes as $imagen) : ?>
+          <li>
+            <img src="<?php echo PATH; ?>img/<?php echo $imagen['thumb']; ?>">
+          </li>
+        <?php endforeach; ?>
       </ul>
     </div>
   </main>
@@ -78,5 +59,6 @@
       });
     });
   </script>
-</body>
-</html>
+  </body>
+
+  </html>

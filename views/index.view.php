@@ -1,7 +1,7 @@
   <?php require 'nav-bar.view.php'; ?>
 
-   <!-- Ventana emergente -->
-   <div id="modalBanner" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <!-- Ventana emergente -->
+  <div id="modalBanner" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
       <div class="init modal-content">
         <div class="float-right py-2 px-1">
@@ -9,7 +9,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <img src="<?php echo PATH; ?>img/banner-inicial.png" class="img-fluid" alt="Anuncios">
+        <img src="<?php echo PATH; ?>img/<?php echo $banner['thumb']; ?>" class="img-fluid" alt="Anuncios">
       </div>
     </div>
   </div>
@@ -25,10 +25,7 @@
     <div class="content-bienvenida">
       <h2>Bienvenid@s</h2>
       <hr>
-      <p>El colegio Jesús Romero Flores le da la más cordial bienvenida. Por mas de 30 años ofrecemos servicios 
-        educativos para el desarrollo de sus hijos e hijas mejorando cada ciclo escolar. Nuestro proceso educativo
-        incluye tanto áreas académicas como en valores para que sus niños tengan un desarrollo sano y obtengan las 
-        habilidades que les permitirán ser exitosos y valiosos seres humanos.</p>
+      <p><?php echo nl2br($welcome_msg['descripcion']); ?></p>
     </div>
     <div class="img-bienvenida pt-3 pt-lg-0 ml-lg-5">
       <img src="<?php echo PATH; ?>img/img-mascota.jpg" alt="Logotipo de la mascota de la escuela">
@@ -56,7 +53,7 @@
       <img src="<?php echo PATH; ?>img/img-kinder.jpg" class="img-fluid" alt="Fotografía de la primaria">
     </div>
   </section>
-  
+
   <section class="sec-contacto py-4">
     <div class="content-contacto container">
       <div class="row">
@@ -73,37 +70,20 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
 
   <section class="img-back py-4">
-    <div class="row container mx-auto">
-      <div class="col-12 col-md-8 col-lg-7 container">
-        <h2 class="text-center">Avisos</h2>
-        <div id="carouselExampleIndicators" class="carousel slide my-3" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="<?php echo PATH; ?>img/img-instalacion1.jpg" class="d-block img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="<?php echo PATH; ?>img/img-instalacion2.jpg" class="d-block img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="<?php echo PATH; ?>img/img-instalacion3.jpg" class="d-block img-fluid" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+    <h2 class="text-center mb-4">Avisos</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 offset-md-1 col-md-10">
+          <ul class="pgwSlideshow">
+            <?php foreach ($avisos as $aviso) : ?>
+              <li>
+                <img src="<?php echo PATH; ?>img/<?php echo $aviso['thumb']; ?>">
+              </li>
+            <?php endforeach; ?>
+          </ul>
         </div>
       </div>
     </div>
@@ -112,73 +92,26 @@
   <section class="sec-testimonios pb-4">
     <h2 class="text-center pt-4">Testimonios</h2>
     <div class="row container mx-auto py-4">
-      <div class="col-12 col-lg-4 pb-3">
-        <div class="card text-center shadow">
-          <div class="card-body">
-            <div class="card-title">
-              <h5 class="card-title">Rosa María Meza Iglesias</h5>
-              <hr>
-            </div>
-            <blockquote class="card-text">
-              “... está súper completo Villa Infantil pues
-              es personalizado con personal capacitado, precio excelente y sobre
-              todo calidad en educación. Recomendable para que los pequeños aprendan.”
-            </blockquote>
-            <div class="calificacion text-center">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+      <?php foreach ($testimonios as $testimonio) : ?>
+        <div class="col-12 col-lg-4 pb-3">
+          <div class="card text-center shadow">
+            <div class="card-body">
+              <div class="card-title">
+                <h5 class="card-title"><?php echo $testimonio['nombre']; ?></h5>
+                <hr>
+              </div>
+              <blockquote class="card-text"><i class="fas fa-quote-left"></i>&nbsp;&nbsp;<?php echo $testimonio['mensaje']; ?>&nbsp;&nbsp;<i class="fas fa-quote-right"></i></blockquote>
+              <div class="calificacion text-center">
+                <?php for ($i = 0; $i < $testimonio['votacion']; $i++) : ?>
+                  <i class="fas fa-star"></i>
+                <?php endfor; ?>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-4 pb-3">
-        <div class="card text-center shadow">
-          <div class="card-body">
-            <div class="card-title">
-              <h5>Zaira Rebollo</h5>
-              <hr>
-            </div>
-            <blockquote class="card-text">
-              “...el Amor, respeto y cuidado que tienen las especialistas con los niños,
-              forman un muy buen equipo ... además la enseñanza es personalizada!,
-              yo estoy muy contenta! porque mi hija estudie ahí”
-            </blockquote>
-            <div class="calificacion text-center">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="card text-center shadow">
-          <div class="card-body">
-            <div class="card-title">
-              <h5>Angélica González Martínez</h5>
-              <hr>
-            </div>
-            <blockquote class="card-text">
-              “Recomiendo ampliamente el jardín de niños Villa Infantil,
-              el trato tanto a los pequeños como a los papás es el mejor,
-              las maestras son un amor, pacientes y comprometidas.”
-            </blockquote>
-            <div class="calificacion text-center">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
+
     <div class="row container mx-auto">
       <div class="col-12 text-center">
         <!-- Button trigger modal -->
@@ -199,12 +132,12 @@
                   <form action="#" method="POST" class="form-opinion" id="form-opinion" novalidate>
                     <div class="group">
                       <input type="text" name="nombre" id="nombre" required="" autocomplete="off" value=""><span class="barra"></span>
-                      <label for="nombre" class="float-label">Nombre completo: <span class="text-danger">*</span></label>   
-                      <div id="error-nombre"></div>                  
+                      <label for="nombre" class="float-label">Nombre completo: <span class="text-danger">*</span></label>
+                      <div id="error-nombre"></div>
                     </div>
                     <div class="group">
                       <input type="text" name="email" id="email" required="" autocomplete="off" value=""><span class="barra"></span>
-                      <label for="email" class="float-label">Correo electrónico: <span class="text-danger">*</span></label>                      
+                      <label for="email" class="float-label">Correo electrónico: <span class="text-danger">*</span></label>
                       <div id="error-email"></div>
                     </div>
                     <div class="form-star">
@@ -225,18 +158,18 @@
                         <!-- fifth star -->
                         <input id="radio5" class="input-star" type="radio" name="votacion" value="1">
                         <label for="radio5" class="label-star">&#9733;</label>
-                      </p>                      
+                      </p>
                     </div>
                     <div id="error-votacion"></div>
                     <div class="group">
                       <textarea name="mensaje" id="mensaje" rows="3" required="" autocomplete="off"></textarea><span class="barra"></span>
-                      <label for="mensaje" class="float-label">Mensaje: <span class="text-danger">*</span></label>                      
+                      <label for="mensaje" class="float-label">Mensaje: <span class="text-danger">*</span></label>
                       <div id="error-mensaje"></div>
                     </div>
                     <div class="text-left">
                       <small class="text-secondary">* Todos los campos son obligatorios</small>
                     </div>
-                    <div id="loaders">                      
+                    <div id="loaders">
                       <img id="spinner" src="img/spinner.gif">
                     </div>
                     <div class="btn-form-opinion">
@@ -251,71 +184,30 @@
         </div> <!-- termina modal -->
       </div>
     </div>
-  </section> 
+  </section>
 
   <section class="img-back">
     <h2 class="text-center pt-4">Últimos eventos</h2>
     <div class="sec-eventos container row py-3 mx-auto">
-      <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-4 pb-3">
-        <article class="card shadow">
-          <img src="<?php echo PATH; ?>img/evento-feb.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
-          <div class="card-body">          
-            <div class="card-title text-center">
-              <h5>Día del amor y la amistad</h5>
-              <hr>              
-            </div>            
-            <p class="card-text">
-              Para conmemorar el día de la amistad, nuestros alumnos realizaron un intercambio
-              de playeritas y convivieron compartiendo su lunch con todos, como buenos amigos.
-              También se tomaron lindas fotos con un tierno fondo que sus maestras prepararon 
-              con mucho cariño para la ocasión.
-            </p>
-            <p class="card-text text-right pt-3">
-              <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Febrero 2020</small>
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-4 pb-3">
-        <article class="card shadow">
-          <img src="<?php echo PATH; ?>img/evento-dic.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
-          <div class="card-body">
-            <div class="card-title text-center">
-              <h5>Pastorela 2019</h5>
-              <hr>
+      <?php foreach ($eventos as $evento) : ?>
+        <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-4 pb-3">
+          <article class="card shadow">
+            <img src="<?php echo PATH; ?>img/<?php echo $evento['thumb']; ?>" class="card-img-top" alt="Imagen ilustrativa del evento">
+            <div class="card-body">
+              <div class="card-title text-center">
+                <h5><?php echo $evento['titulo']; ?></h5>
+                <hr>
+              </div>
+              <p class="card-text"><?php echo nl2br($evento['descripcion']); ?></p>
+              <p class="card-text text-right pt-3">
+                <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en <?php echo fecha($evento['fecha']); ?></small>
+              </p>
             </div>
-            <p class="card-text">
-              Nuestros alumnos presentaron la divertida pastorela “entre pastores y diabluras” 
-              en el teatro de la Unidad Santa Fe, donde hicieron gala de su talento y gracia para bailar,
-              entreteniendo a familiares y amigos de la comunidad Villa Infantil y Jesús Romero Flores.
-            </p>
-            <p class="card-text text-right pt-3">
-              <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Diciembre 2020</small>
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-4 pb-3">
-        <article class="card shadow">
-          <img src="<?php echo PATH; ?>img/evento-nov.jpg" class="card-img-top" alt="Imagen ilustrativa del evento">
-          <div class="card-body">
-            <div class="card-title text-center">
-              <h5>Día de muertos</h5>
-              <hr>
-            </div>
-            <p class="card-text">
-              Nuestros alumnos presentaron la divertida pastorela “entre pastores y diabluras” 
-              en el teatro de la Unidad Santa Fe, donde hicieron gala de su talento y gracia para bailar,
-              entreteniendo a familiares y amigos de la comunidad Villa Infantil y Jesús Romero Flores.
-            </p>
-            <p class="card-text text-right pt-3">
-              <small class="text-muted"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Publicado en Noviembre 2020</small>
-            </p>
-          </div>
-        </article>
-      </div>
+          </article>
+        </div>
+      <?php endforeach; ?>
     </div>
-  </section>
+   </section>
 
   <?php require 'footer.view.php'; ?>
 
@@ -325,6 +217,10 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/headroom.min.js"></script>
 
+  <!-- JavaScript file for gallery -->
+  <script src="js/pgwslideshow.min.js"></script>
+
+
   <!-- Custom javascript files -->
   <script src="js/nav-bar.js"></script>
   <script src="js/form-opinion.js"></script>
@@ -332,8 +228,16 @@
     $(document).ready(function() {
       /*activating the modal for the index page banner*/
       $('#modalBanner').modal('show');
+
+      /** Slide gallery script **/
+      var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow(); //puglin is initialized for gallery
+
+      pgwSlideshow.reload({ //configuring the plugin
+        autoSlide: true,
+        displayList: false
+      });
     });
-  </script>  
+  </script>
 </body>
 
 </html>

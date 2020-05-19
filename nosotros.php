@@ -1,50 +1,64 @@
-    <?php
-
-    //comentary form 
-    $error_nombre = '';
-    $error_email = '';
-    $error_mensaje = '';
-    $enviado = '';
-
-    if (isset($_POST['submit'])) {
-        $nombre = $_POST['nombre'];
-        $email  = $_POST['email'];
-        $mensaje = $_POST['mensaje'];
-
-        if (!empty($nombre)) {
-            $nombre = filter_var(trim($nombre), FILTER_SANITIZE_STRING);
-        } else {
-            $error_nombre = 'Por favor ingresa un nombre <br/>';
-        }
-
-        if (!empty($email)) {
-            $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $error_email = 'Por favor, ingresa un correo válido <br/>';
-            }
-        } else {
-            $error_email = 'Por favor, ingresa un correo <br/>';
-        }
-
-        if (!empty($mensaje)) {
-            $mensaje = htmlspecialchars($mensaje);
-            $mensaje = trim($mensaje);
-            $mensaje = stripslashes($mensaje);
-        } else {
-            $error_mensaje = 'Por favor, ingresa un comentario o sugerencia';
-        }
-
-        if (!$error_nombre && !$error_email && !$error_mensaje) {
-            $enviar_a = 'andy_me17133781@hotmail.com';
-            $asunto = 'Comentario sobre el servicio enviado desde página villainfantilmi.edu.mx';
-            $mensaje_enviado = "De: $nombre \n";
-            $mensaje_enviado .= "Correo: $email \n";
-            $mensaje_enviado .= "Mensaje: " . $mensaje;
-
-            // mail($enviar_a, $asunto, $mensaje_enviado);
-            $enviado = true;
-        }
-    }
+<?php
     require 'admin/config.php';
+    require 'functions.php';
+
+    $conexion = conexion($bd_config);
+
+    if (!$conexion) {
+        header('Location:' . PATH . 'error.php');
+    }
+
+    /**start message section */
+    $init_msg = obt_contenido($conexion, 'contenido_texto', 'sec-historia');
+
+    if (!$init_msg) {
+        header('Location:' . PATH . 'error.php');
+    }
+
+    $init_msg = $init_msg[0];
+    
+    /**vision message section */
+    $vision_msg = obt_contenido($conexion, 'contenido_texto', 'sec-vision');
+
+    if (!$vision_msg) {
+        header('Location:' . PATH . 'error.php');
+    }
+
+    $vision_msg = $vision_msg[0];
+
+    /**mision message section */
+    $mision_msg = obt_contenido($conexion, 'contenido_texto', 'sec-mision');
+
+    if (!$mision_msg) {
+        header('Location:' . PATH . 'error.php');
+    }
+
+    $mision_msg = $mision_msg[0];
+
+
+    /**our team message section */
+    $team_msg = obt_contenido($conexion, 'contenido_texto', 'sec-equipo');
+
+    if (!$team_msg) {
+        header('Location:' . PATH . 'error.php');
+    }
+
+    $team_msg = $team_msg[0];
+
+    /**our team message section */
+    $team_thumb = obt_contenido($conexion, 'contenido_img', 'sec-equipo');
+
+    if (!$team_thumb) {
+        header('Location:' . PATH . 'error.php');
+    }
+
+    $team_thumb = $team_thumb[0];
+
+    /**administrative staff section*/
+    $personal = obt_rows_3($conexion,'personal');
+
+    if (!$personal) {
+        header('Location:' . PATH . 'error.php');
+    }
+
     require 'views/nosotros.view.php';
