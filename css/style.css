@@ -1505,8 +1505,9 @@ label{
   line-height: 1.8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .content-nosotros {
+    padding: 1.25rem 1.25rem 0;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -1532,12 +1533,6 @@ label{
 
   .text-nosotros p {
     line-height: 2;
-  }
-}
-
-@media (min-width: 1024px) {
-  .content-nosotros {
-    padding: 1.25rem 1.25rem 0;
   }
 }
 
@@ -1568,6 +1563,7 @@ label{
   width: 12.5rem;
   padding: 0.625rem;
 }
+
 .sec-admin hr {
   width: 30%;
   margin: 0.3rem auto 1rem;

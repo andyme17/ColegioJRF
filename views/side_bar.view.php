@@ -40,7 +40,7 @@
                         <a href="<?php echo PATH; ?>admin/editar_mensaje_historia.php">Mensaje de Historia</a>
                     </li>
                     <li>
-                        <a href="<?php echo PATH; ?>admin/editar_vision.php">Misión</a>
+                        <a href="<?php echo PATH; ?>admin/editar_mision.php">Misión</a>
                     </li>
                     <li>
                         <a href="<?php echo PATH; ?>admin/editar_vision.php">Visión</a>

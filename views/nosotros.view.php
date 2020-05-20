@@ -15,14 +15,14 @@
             <h3>Misión</h3>
             <hr>
           </div>
-          <p class="text-justify"><?php echo $mision_msg['descripcion'];?></p>
+          <p class="text-justify"><?php echo nl2br($mision_msg['descripcion']);?></p>
         </div>
         <div class="col-12 col-md-6 p-4">
           <div class="sec-mi-vi-header pb-3">
             <h3>Visión</h3>
             <hr>
           </div>
-          <p class="text-justify"><?php echo $vision_msg['descripcion'];?></p>
+          <p class="text-justify"><?php echo nl2br($vision_msg['descripcion']);?></p>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
         <img src="<?php echo PATH ?>img/<?php echo $team_thumb['thumb'];?>" class="img-nosotros img-fluid" alt="Imagen del personal del kinder">
       </div>
       <div class="text-nosotros">
-        <p><?php echo $team_msg['descripcion'];?></p>
+        <p><?php echo nl2br($team_msg['descripcion']);?></p>
       </div>
     </div>
 
