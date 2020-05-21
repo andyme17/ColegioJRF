@@ -7,8 +7,8 @@ var titulo = document.getElementById('titulo'),
     descripcion = document.getElementById('descripcion'),
     fecha = document.getElementById('fecha'),
     thumb = document.getElementById('thumb'),
-    flag1 = false;
-    flag2 = false;
+    flag1 = false,
+    flag2 = false,
     flag3 = false;
 
 eventListener();

@@ -39,7 +39,7 @@
                             <div class="col-12 col-md-6 mb-2">
                                 <div class="cont-item shadow-lg">
                                     <div class="container">
-                                        <h5 class=""><?php echo $aviso['id']; ?> .- Aviso</h5>
+                                        <h5><?php echo $aviso['id']; ?> .- Aviso</h5>
                                         <div class="btn-opc-card">
                                             <a class="btn btn-primary mr-2" href="<?php echo PATH; ?>admin/ver_aviso.php?id=<?php echo $aviso['id']; ?>"><i class="fas fa-eye"></i> Ver</a>
                                             <a class="btn btn-danger" href="<?php echo PATH; ?>admin/eliminar_aviso.php?id=<?php echo $aviso['id']; ?>"><i class="fas fa-trash-alt"></i> Eliminar</a>
