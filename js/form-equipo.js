@@ -82,8 +82,8 @@ function validaImagen(obj){
             }else if(uploadFile.name.length > 200){
                 error(obj,'error-thumb','El nombre del archivo no debe exceder los 200 caracteres. Por favor, modifica el nombre.');                
                 document.getElementById('thumb').value = "";    
-            }else if (uploadFile.size > 175000){
-                error(obj,'error-thumb','El tamaño de la imagen no puede exceder los 170 KB');                
+            }else if (uploadFile.size > 210000){
+                error(obj,'error-thumb','El tamaño de la imagen no puede exceder los 200 KB');                
                 document.getElementById('thumb').value = "";               
             }else{
                 limpiarError('error-thumb');

@@ -35,7 +35,7 @@
                                 <input type="hidden" name="seccion" value="<?php echo $vision_msg['seccion']; ?>">
                                 <h3 class="mt-1 mb-4 text-center">Editar Visión</h3>
                                 <div class="group pt-3 pt-md-4">
-                                    <textarea name="mensaje" id="mensaje" rows="5" required="" autocomplete="off" onpaste="countChar();" onkeyup="countChar();" onkeypress="return limita(350);"><?php echo $vision_msg['descripcion']; ?></textarea><span class="barra"></span>
+                                    <textarea name="mensaje" id="mensaje" rows="4" required="" autocomplete="off" onpaste="countChar();" onkeyup="countChar();" onkeypress="return limita(350);"><?php echo $vision_msg['descripcion']; ?></textarea><span class="barra"></span>
                                     <label for="mensaje" class="float-label">Mensaje: <span class="text-danger">*</span></label>
                                     <div id="res" class="text-secondary text-right">0 caracter/s, te quedan 350</div>
                                     <div id="error-msj"></div>
