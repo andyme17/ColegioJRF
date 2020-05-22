@@ -18,5 +18,4 @@
     <script src="../js/side-bar.js"></script>
 </body>
 
-</html>
-</html>    
+</html>   
