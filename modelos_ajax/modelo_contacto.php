@@ -16,7 +16,7 @@
 
         #Definimos $respuesta en el if evitando el else interior
         if (!empty($nombre) && !empty($email) && !empty($mensaje)) {
-            $email_to = "colegiojrf@live.com.mx";
+            $email_to = "colegiojrf@gmail.com";
             $email_subject = "Solicitud de Informes desde colegiojesusromero.edu.mx";
             $email_message = "Contenido del mensaje: \n\n";
             $email_message .= " Nombre: " . $nombre;
