@@ -2307,7 +2307,7 @@ input#esc-procedencia:disabled {
   position: relative;
 }
 
-#content button.btn {
+#content button.btn,#login button.btn {
   width: auto !important;
   padding: .375rem .75rem !important;
 }

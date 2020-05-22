@@ -1,6 +1,6 @@
-  <?php require 'nav-bar.view.php'; ?>
+    <?php require 'nav-bar.view.php'; ?>
 
-  <main class="sec-contact py-5">
+    <main class="sec-contact py-5">
         <div class="content-contact container mx-auto">
             <div class="text-contact pb-3">
                 <h3>Para más información</h3>

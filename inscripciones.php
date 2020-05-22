@@ -85,47 +85,46 @@ if (isset($_POST['submit'])) {
         $html2pdf = new Html2Pdf('P', 'A4', 'es', 'true', 'UTF8');
         $html2pdf->setDefaultFont('Arial');
         $html2pdf->writeHTML($html);
-        $html2pdf->output('inscrip.pdf', 'D');
-        /*
-            $email_to = "zunosan.ricardo506@gmail.com";
-            $subject = "Solicitud de Pre-Inscripción de ". $nombre_alu. " ".$ap_pat_alu." ".$ap_mat_alu;
-            
-            $message = "<p>Consulte el archivo adjunto.</p>";
-            $separator = md5(time());
-            $eol = PHP_EOL;
-            $filename = $nombre_alu."_".$ap_pat_alu."_".$ap_mat_alu.".pdf";
-            
-            $pdfdoc = $html2pdf->output('', 'S');
-            $attachment = chunk_split(base64_encode($pdfdoc));
-        
-            $headers = "From: " . $email_tutor . $eol;
-            $headers .= "MIME-Version: 1.0" . $eol;
-            $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol . $eol;
-        
-            $body = '';
-        
-            $body .= "Content-Transfer-Encoding: 7bit" . $eol;
-            $body .= "This is a MIME encoded message." . $eol; //had one more .$eol
-        
-        
-            $body .= "--" . $separator . $eol;
-            $body .= "Content-Type: text/html; charset=\"iso-8859-1\"" . $eol;
-            $body .= "Content-Transfer-Encoding: 8bit" . $eol . $eol;
-            $body .= $message . $eol;
-        
-        
-            $body .= "--" . $separator . $eol;
-            $body .= "Content-Type: application/octet-stream; name=\"" . $filename . "\"" . $eol;
-            $body .= "Content-Transfer-Encoding: base64" . $eol;
-            $body .= "Content-Disposition: attachment" . $eol . $eol;
-            $body .= $attachment . $eol;
-            $body .= "--" . $separator . "--";
-        
-            if (mail($email_to, $subject, $body, $headers)) {
-                header('Location: recibe.php');                
-            } else {        
-                header('Location: error.php');
-            }       */
+
+        $email_to = "zunosan.ricardo506@gmail.com";
+        $subject = "Solicitud de Pre-Inscripción de " . $nombre_alu . " " . $ap_pat_alu . " " . $ap_mat_alu;
+
+        $message = "<p>Consulte el archivo adjunto.</p>";
+        $separator = md5(time());
+        $eol = PHP_EOL;
+        $filename = $nombre_alu . "_" . $ap_pat_alu . "_" . $ap_mat_alu . ".pdf";
+
+        $pdfdoc = $html2pdf->output('', 'S');
+        $attachment = chunk_split(base64_encode($pdfdoc));
+
+        $headers = "From: " . $email_tutor . $eol;
+        $headers .= "MIME-Version: 1.0" . $eol;
+        $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol . $eol;
+
+        $body = '';
+
+        $body .= "Content-Transfer-Encoding: 7bit" . $eol;
+        $body .= "This is a MIME encoded message." . $eol; //had one more .$eol
+
+
+        $body .= "--" . $separator . $eol;
+        $body .= "Content-Type: text/html; charset=\"iso-8859-1\"" . $eol;
+        $body .= "Content-Transfer-Encoding: 8bit" . $eol . $eol;
+        $body .= $message . $eol;
+
+
+        $body .= "--" . $separator . $eol;
+        $body .= "Content-Type: application/octet-stream; name=\"" . $filename . "\"" . $eol;
+        $body .= "Content-Transfer-Encoding: base64" . $eol;
+        $body .= "Content-Disposition: attachment" . $eol . $eol;
+        $body .= $attachment . $eol;
+        $body .= "--" . $separator . "--";
+
+        if (mail($email_to, $subject, $body, $headers)) {
+            header('Location: recibe.php');
+        } else {
+            header('Location: error_inscripcion.php');
+        }
     }
 }
 
