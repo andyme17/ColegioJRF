@@ -61,7 +61,7 @@
           <button class="accordion-item"><?php echo $service['nombre']; ?></button>
           <div class="desc-service">
             <div class="my-3">
-              <p><?php echo $service['descripcion']; ?></p>
+              <p><?php echo nl2br($service['descripcion']); ?></p>
               <div class="img-service">
                 <img src="<?php echo PATH; ?>img/<?php echo $service['thumb']; ?>" alt="Imagen ilustrativa del servicio <?php echo $service['nombre']; ?>" class="img-fluid">
               </div>

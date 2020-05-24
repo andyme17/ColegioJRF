@@ -12,7 +12,7 @@
                                             <img src="<?php echo PATH; ?>img/<?php echo $servicio['thumb']; ?>" class="img-fluid">
                                         </div>
                                         <div class="col-12 col-sm-6">
-                                            <p><?php echo $servicio['descripcion']; ?></p>
+                                            <p><?php echo nl2br($servicio['descripcion']); ?></p>
                                         </div>
                                     </div>
                                 </div>
