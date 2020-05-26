@@ -28,7 +28,7 @@ body#login{
 
 @media (min-width: 768px) {
   body {
-    padding-top: 6.5rem;
+    padding-top: 4.5rem;
   }
 
   body#login {
